@@ -1,0 +1,237 @@
+/*
+Версия 151102 — MHG + ZA + SыR
+• сборка из повторяющихся файлов
+
+Версия 151121
+• Virtuozno / Основы
+• #ABS-* → .dg-P*
+• .dg-FL, .dg-FR
+
+Версия 160120
+• Virtuozno / Основы → DGTZ / Основы
+• #Virtuozno → #dg-Arcem
+• #Workspace → #dg-Workspace
+• vz-* → dg-*
+*/
+
+
+
+/* DGTZ / Основы
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* 151121 */#dg-Arcem{position:relative;overflow-y:auto;width:100%}
+
+/*#dg-Arcem{min-height:100%;height:auto!important;height:100%}*/#dg-Arcem{min-height:100%;height:100%}
+#dg-Arcem{position:relative;overflow:hidden;font-size:10px}
+#dg-Workspace{overflow:auto}
+#dg-Workspace,.dg-P,.dg-PA,.dg-PC,.dg-PL,.dg-PR{position:absolute;top:0;left:0;right:0;bottom:0}
+.dg-PA{bottom:auto}.dg-PC{top:auto}.dg-PL{right:auto}.dg-PR{left:auto}
+
+
+/*#ABS-A,/*#ABS-B,* /#ABS-C,/*#ABS-Notify,* /#ABS-L,#ABS-R,/** /
+{position:absolute;top:0;left:0;right:0;bottom:0}
+.dg-abs-A{bottom:auto}.dg-abs-C{top:auto}.dg-abs-L{right:auto}.dg-abs-R{left:auto}
+/*#ABS-A{bottom:auto}#ABS-C{top:auto}#ABS-L{right:auto}#ABS-R{left:auto}
+#ABS-C{z-index:5;max-height:50%;background:#400;color:#FFF;font-size:1.5em;padding:1em}/**/
+
+/* 151116 */.dg-FL{float:left}.dg-FR{float:right}
+
+
+
+/* 160121 :: From Primary / Основные селекторы
+///////////////////////////////////////////////////////////////////////////// */
+.dg-wrapper {
+	width: 100%;
+	/*min-width: 980px; — использовать с классом .dg-minW */
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+
+/* Header | Attic | Чердак
+---------------------------------------------------------------------------------------------------- */
+.dg-Attic {
+	position: relative;
+	width: 100%;
+	/*height: 150px;*/
+	/*background: #FFE680;*/
+	/*background-color: #F7F6F2;*/
+}
+
+
+/* Middle | Basis | Основа
+---------------------------------------------------------------------------------------------------- */
+.dg-Basis {
+	width:100%;
+	padding:0 0 22em;
+	position:relative;
+}
+	.Basis:after {
+		display: table;
+		clear: both;
+		content: '';
+	}
+.dg-container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.dg-content {
+	padding: 0 270px 0 270px;
+}
+
+
+/* Left Sidebar | PanelL
+---------------------------------------------------------------------------------------------------- */
+.dg-PanelL {
+	float: left;
+	width: 250px;
+	margin-left: -100%;
+	position: relative;
+	background: #B5E3FF;
+}
+
+
+/* Right Sidebar | PanelR
+---------------------------------------------------------------------------------------------------- */
+.dg-PanelR {
+	float: left;
+	width: 250px;
+	margin-left: -250px;
+	position: relative;
+	background: #FFACAA;
+}
+
+
+/* Footer | Celario | Подвал
+---------------------------------------------------------------------------------------------------- */
+.dg-Celario {
+	margin: -22em auto 0;
+	/*min-width: 980px; — использовать с классом .dg-minW */
+	height: 22em;
+	position: relative;
+}
+
+
+/* Entire | Цельный | derfex? :: 160222
+---------------------------------------------------------------------------------------------------- */
+.dg-Entire{display:block;width:100%;height:100%}
+
+/* ↑↑↑↑↑ 160121 :: From Primary / Основные селекторы
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+.dg-w{margin:auto;overflow:hidden}
+/* Расширяем границы .dg-w, для возможности показать за его пределами другое содержимое
+ * При этом из-за этого на узких экранах не будет появляться горизонтальная полоса прокрутки.
+ * Могут возникнуть проблемы с background дочернего элемента на узких мониторах. Следить за этим!
+ */
+.dg-wExpand{overflow:hidden;width:100%}
+	.dg-wExpand>.dg-w{overflow:visible}
+
+
+.dg-ww{font-size:1.6em;padding:.625em}
+/* ↑↑↑↑↑ DGTZ / Основы
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Interface / Элементы интерфейса
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.dg-link,.dg-link-wrap{text-decoration:none;color:inherit}
+.dg-link-wrap{display:block}
+
+
+.dg-button{position:relative;cursor:pointer;text-decoration:none;text-align:center}
+
+
+/* Для текстовых полей:
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	   -moz-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	    -ms-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	     -o-box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+	        box-shadow: inset 0 1px 2px rgba(0,0,0,0.3);
+*/
+/* ↑↑↑↑↑ Interface / Элементы интерфейса
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Extra Usefulness / Дополнительные полезности
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+.dg-button,.dg-button *,.dg-unselectable,.dg-unselectable *{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	 -khtml-user-select: none;
+	   -moz-user-select: none;
+	    -ms-user-select: none;
+	        user-select: none;
+}
+.dg-button::selection,     .dg-button *::selection,     .dg-unselectable::selection,     .dg-unselectable *::selection     {background-color:transparent;color:inherit}
+.dg-button::-moz-selection,.dg-button *::-moz-selection,.dg-unselectable::-moz-selection,.dg-unselectable *::-moz-selection{background-color:transparent;color:inherit}
+
+.dg-Cfix::after{content:'';display:table;clear:both}
+
+/* ↑↑↑↑↑ Extra Usefulness / Дополнительные полезности
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.dg-list{text-align:justify}
+.dg-list .dg-li{display:block}
+.dg-list[data-dg-cssquantis] .dg-li{display:inline-block}
+.dg-list[data-dg-cssquantis="2"] .dg-li{width:49%}
+.dg-list[data-dg-cssquantis="3"] .dg-li{width:32%}
+.dg-list[data-dg-cssquantis="4"] .dg-li{width:24%}
+.dg-list[data-dg-cssquantis="5"] .dg-li{width:19%}
+
+
+
+h1,h2,h3,h4,h5,h6,.dg-title{font-weight:bold}
+h1.dg-title,.dg-title1{font-size:3.2em;margin:.67em 0}
+h2.dg-title,.dg-title2{font-size:2.4em;margin:.83em 0}
+h3.dg-title,.dg-title3{font-size:1.87em;margin:1em 0}
+h4.dg-title,.dg-title4{font-size:1em;margin:1.33em 0}
+h5.dg-title,.dg-title5{font-size:1.33em;margin:1.67em 0}
+h6.dg-title,.dg-title6{font-size:1.07em;margin:2.33em 0}
+h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: усиливать .dg-title? */
+.dg-ww h1.dg-title,.dg-ww .dg-title1{font-size:2em;margin:.67em 0}
+.dg-ww h2.dg-title,.dg-ww .dg-title2{font-size:1.5em;margin:.83em 0}
+.dg-ww h3.dg-title,.dg-ww .dg-title3{font-size:1.17em;margin:1em 0}
+.dg-ww h4.dg-title,.dg-ww .dg-title4{font-size:1em;margin:1.33em 0}
+.dg-ww h5.dg-title,.dg-ww .dg-title5{font-size:.83em;margin:1.67em 0}
+.dg-ww h6.dg-title,.dg-ww .dg-title6{font-size:.67em;margin:2.33em 0}
+
+
+
+
+.dg-article{}
+.dg-article .dg-p{font-size:1.4em;padding-bottom:1em;line-height:150%;font-weight:400;text-indent:2em;text-align:justify}
+.dg-article .dg-img{display:block;width:100%}
+
+
+
+.dg-input,.dg-textarea{font:inherit}
+
+
+
+/* derfex? :: dev
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* img */
+.dg-img{}
+.dg-img-box{}
+.dg-img-box .dg-img{display:block}
+
+
+
+/* max100 */
+.dg-100{width:100%;height:100%}
+
+.dg-min100.dg-img-box .dg-img,
+.dg-min100{min-width:100%;min-height:100%}
+
+.dg-max100.dg-img-box .dg-img,
+.dg-max100{max-width:100%;max-height:100%}
+
+.dg-100.dg-img-box .dg-img{width:100%}
+/* derfex? */

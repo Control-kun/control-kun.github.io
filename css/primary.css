@@ -1,0 +1,164 @@
+/*
+Версия 151019 :: @za
+Версия 151102 :: небольшие изменения: пара правил для input, textarea…; закомментированы пока.
+Версия 160121 :: Перенос классов в default.css. #001 пополнено html,body{height:100%}.
+
+разработка :: 15 правил
+*/
+
+
+
+/* 001. Стандартное обнуление отступов, границ, размера шрифта и фона */
+html,body,article,section,nav,aside,h1,h2,h3,h4,h5,h6,header,footer,address,
+p,pre,blockquote,ol,ul,li,dl,dt,dd,figure,figcaption,div,
+em,strong,small,cite,q,dfn,abbr,time,code,var,samp,kbd,sub,sup,i,b,mark,span,
+ins,del,
+img,iframe,object,video,audio,
+table,caption,tbody,thead,tfoot,tr,td,th,
+form,label,/*fieldset,legend, — derfex? нужны настройки*/
+canvas{
+outline:0;
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+/* font: inherit; — предлагает Eric Meyer */ 
+}
+/* Нет в W3C */
+details,
+hgroup,menu,summary{
+outline:0;
+margin:0;
+padding:0;
+border:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+/* Есть у Eric Meyer, но пропущены:
+a,s,u,details,embed,hgroup,menu,output,ruby,summary + устаревшие в primary-obsolete.css
+/**/
+
+/* Есть в W3C, но пропущены
+—
+(hr),(main){}
+(a),(s),(data),(u),(ruby,rb,rt,rtc,rp),(bdi,bdo),(br),(wbr){}
+—
+(embed),(param),(source),(track),(map),(area){}
+(colgroup),(col){}
+(input),(button),(select),(datalist),(optgroup),(option),(textarea),(keygen),(output),(progress),(meter){}
+(script,noscript,template){}
+
+input,textarea{ см. #015
+  margin:0;
+  padding:0
+}
+/**/
+html,body{height:100%}
+
+/* 002. Body: высота строки; */
+body{line-height:1}
+
+/* 003. Старые браузеры незнакомые теги (из HTML5) воспринимают [display:inline]. Поправим. */
+section,article,aside,header,footer,nav,figure,figcaption{display:block}
+/* Уже использовался как блочный */main{display:block}
+/* Уже использовались как блочные */details,hgroup,summary{display:block}
+/* Не указаны в W3C как новые. Некоторые не описаны. */
+details,hgroup,menu{display:block}
+/* Указаны в W3C как новые. Блочные ли?
+(main),(template)
+(video,audio,track,embed,mark,progress,meter,time),(ruby,rt,rp,bdi,wbr),(canvas,datalist,output)
+/**/
+
+/* 004. Убираем символ списка для навигации */
+nav ul,.dg-menu{list-style:none}
+/* ol,ul{list-style:none} — предлагает Eric Meyer */
+
+/* 005. Убираем кавычки у цитат */
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
+
+/* 006. Убираем границы у таблиц */
+table{border-collapse:collapse;border-spacing:0}
+
+/* 007. Отдельный сброс для ссылок */
+a {
+outline:none;/*Убираем границу вокруг ссылок*/
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+/* Уже использовалось так: */
+a {cursor:pointer;text-decoration:none}
+/* derfex:
+a:link          {color:#0267FF}
+a:visited       {color:#B413D3}
+a:hover         {color:#004DC0}
+a:visited:hover {color:#9501B3}
+a:focus         {color:#004DC0}
+a:visited:focus {color:#770081}
+a:active        {color:#000000}
+/**/
+/*
+#Virtuozno a:link          {color:#00A5FF}
+#Virtuozno a:hover         {color:#FFA500}
+#Virtuozno a:focus         {color:#004DC0; outline: 5px solid red;}
+#Virtuozno a:active        {color:#000000}
+#Virtuozno a:visited       {color:#FFA555}
+#Virtuozno a:visited:hover {color:#9501B3}
+#Virtuozno a:visited:focus {color:#770081}/**/
+/*FF:
+*|*:link { color: #00E; }
+*|*:-moz-any-link:active { color: #E00; }/**/
+
+/* 008. Редактирование */
+del{text-decoration:line-through}
+ins{background-color:#ff9;color:#000;text-decoration:none}/* derfex: Установить цвета в соответствии с цветовой схемой */
+/*derfex-: from GitHub*/
+del{background-color:#FFEAEA;color:#A33}
+ins{background-color:#EAFFEA;/*border-bottom:1px solid #3CB371;*/}
+
+/* 009. Mark: выделить слово для пользователя */
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}/* derfex: Установить цвета в соответствии с цветовой схемой */
+/* derfex- :: –плохой фон, –italic, –bold */
+
+/* 010. Аббревиатуры и определения */
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}/* derfex: (?) content-box */
+
+/* 011. Горизонтальный разделитель *//* derfex: Установить цвета в соответствии с цветовой схемой */
+hr{display:block;margin:1em 0;border:0;border-top:1px solid #CCC;padding:0;height:1px}
+
+/* 012. Вертикальное выравнивание по середине */
+input,select{vertical-align:middle}
+
+/* 013. derfex: Для ультратонких шрифтов: сбрасываем стандартное «bold», шрифт становится таким же, как его родительский элемент */
+strong,b{font-weight:inherit}strong,b{font-weight:bolder}/* Именно два правила. Теперь bolder будет вычисляться, исходя из веса шрифта родительского элемента */
+/* Предлагает imgur.com (HTML4):
+address,caption,cite,code,dfn,em,strong,th,var{
+  font-style:normal;
+  font-weight:400
+}/**/
+
+/* 014. Оформление кнопки. Уже использовалось так; дополнено */
+button{
+outline:0;
+margin:0;
+/*border:0;*/
+padding:0;
+font:inherit;
+font-size:100%;
+vertical-align:baseline;
+}
+/* убираем внутренний отступ у кнопки в FF, который зарезервирован для рамки при фокусе */
+button::-moz-focus-inner{border:0;padding:0}
+
+/* 015. derfex: (?) Убирать отступы по совету imgur.com (HTML4) *//*
+input,textarea{margin:0;padding:0}*/
+
+
+
+/* Остальное перенесено в default.css */
