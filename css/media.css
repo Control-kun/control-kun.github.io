@@ -8,7 +8,6 @@
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
 body {
-	min-width: 750px;
 }
 .menu-container {
 	display: none;
