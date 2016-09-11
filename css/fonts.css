@@ -1,9 +1,50 @@
 @font-face {
-	font-family: "RobotoRegular";
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot");
-	src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
-			 url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
-			 url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-family: "BebasRegular";
+	src: url("../fonts/BebasNeue/BebasRegular.eot");
+	src: url("../fonts/BebasNeue/BebasRegular.eot?#iefix") format("embedded-opentype"),
+			 url("../fonts/BebasNeue/BebasRegular.woff") format("woff"),
+			 url("../fonts/BebasNeue/BebasRegular.ttf") format("truetype");
 	font-style: normal;
 	font-weight: normal;
 }
+
+@font-face {
+  font-family: "BebasBold";
+  src: url("../fonts/BebasNeue/BebasBold.eot");
+  src: url("../fonts/BebasNeue/BebasBold.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/BebasNeue/BebasBold.woff") format("woff"),
+       url("../fonts/BebasNeue/BebasBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BebasLight";
+  src: url("../fonts/BebasNeue/BebasLight.eot");
+  src: url("../fonts/BebasNeue/BebasLight.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/BebasNeue/BebasLight.woff") format("woff"),
+       url("../fonts/BebasNeue/BebasLight.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BebasThin";
+  src: url("../fonts/BebasNeue/BebasThin.eot");
+  src: url("../fonts/BebasNeue/BebasThin.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/BebasNeue/BebasThin.woff") format("woff"),
+       url("../fonts/BebasNeue/BebasThin.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "BebasBook";
+  src: url("../fonts/BebasNeue/BebasBook.eot");
+  src: url("../fonts/BebasNeue/BebasBook.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/BebasNeue/BebasBook.woff") format("woff"),
+       url("../fonts/BebasNeue/BebasBook.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
