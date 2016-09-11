@@ -68,13 +68,14 @@ header {
 	border-left: none;
 	border-right: none;
 }
-
+/* RCM */
 .header-logo {
-	height: 54px;
-	width: 250px;
-	margin:31px 0px 27px 3px;
+	height: 22px;
+	width: 122px;
+	margin:35px 0px 30px 11px;
 	float: left;
 	background: url(../img/header-logo.png) no-repeat;
+	background-size: cover;
 }
 .menu-container {
 	display: block;
@@ -107,7 +108,7 @@ header {
 }
 .header-phone {
 	float: right;
-	margin:25px 20px 27px 0;
+	margin:25px 20px 10px 0;
 }
 .header-phone__link {
 	font-family: "BebasBold";
@@ -119,3 +120,4 @@ header {
 	text-decoration: none;
 	color: #383839;
 }
+/* RCM END */
