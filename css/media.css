@@ -10,6 +10,13 @@
 .menu-container {
 	display: none;
 }
+.header-phone__link {
+	color: #1755bb;
+
+}
+.header-phone__link:hover {
+	color: #1755bb;
+}
 }
 
 /* Small Devices, Tablets */

@@ -62,7 +62,60 @@ body {
 .hidden {
 	display: none;
 }
+header {
+	overflow:	hidden;
+	border: 1px solid rgb(201, 201, 201);
+	border-left: none;
+	border-right: none;
+}
 
+.header-logo {
+	height: 54px;
+	width: 250px;
+	margin:31px 0px 27px 3px;
+	float: left;
+	background: url(../img/header-logo.png) no-repeat;
+}
 .menu-container {
 	display: block;
+	float: right;
+	overflow: hidden;
+
+	margin: 35px 9px 0 0;
+}
+.menu-link {
+	font-family: "BebasBold";
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #1755bb;
+	margin-right: 31px;
+}
+.menu-link:hover {
+	color: #e31616;
+	text-decoration: none;
+}
+.menu-link:active {
+	color: #bf1010;
+	text-decoration: none;
+}
+.menu-link:focus {
+	text-decoration: none;
+}
+
+.menu-container ul li {
+	float: left;
+}
+.header-phone {
+	float: right;
+	margin:25px 20px 27px 0;
+}
+.header-phone__link {
+	font-family: "BebasBold";
+	font-size:30px;
+	color: #383839;
+
+}
+.header-phone__link:hover {
+	text-decoration: none;
+	color: #383839;
 }
