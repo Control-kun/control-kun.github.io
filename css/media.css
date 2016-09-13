@@ -7,9 +7,6 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-body {
-	min-width: 750px;
-}
 .menu-container {
 	display: none;
 }
@@ -32,6 +29,7 @@ body {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+
 	.top-banner {
 		padding: 32px 0 0 6px;
 	}
