@@ -83,7 +83,7 @@ header {
 	float: right;
 	overflow: hidden;
 
-	margin: 35px 9px 0 0;
+	margin: 38px 9px 0 0;
 }
 .menu-link {
 	font-family: "BebasBold";
@@ -109,7 +109,7 @@ header {
 }
 .header-phone {
 	float: right;
-	margin:37px 20px 10px 0;
+	margin:35px 20px 10px 0;
 }
 .header-phone__link {
 	font-family: "BebasBold";
