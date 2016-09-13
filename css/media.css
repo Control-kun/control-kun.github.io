@@ -53,6 +53,11 @@ body {
 		text-align: center;
 	}
 
+	.price-descr {
+		width: 238px;
+		margin: 0 auto;
+	}
+
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
