@@ -20,11 +20,21 @@ body {
 .header-phone__link:hover {
 	color: #1755bb;
 }
+.top-banner {
+    margin-top: 30px;
+    height: 482px;
+    background: url(../img/top-banner-1280.png);
+    background-size: cover;
+    padding: 32px 0 0 18px;
+}
 
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.top-banner {
+		padding: 32px 0 0 6px;
+	}
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
