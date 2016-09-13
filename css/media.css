@@ -35,6 +35,23 @@ body {
 	.top-banner {
 		padding: 32px 0 0 6px;
 	}
+	.prices-wrapper {
+		width: 348px;
+		margin:0 auto;
+	}
+	.prices-item {
+		width: 348px;
+		height: 400px;
+		margin:0 auto;
+		margin-bottom: 20px;
+
+		padding: 250px 0 0 0;
+
+		border-radius: 5px;
+		box-shadow: 0px 1px 0px 0px #d3d3d3;
+
+		text-align: center;
+	}
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {

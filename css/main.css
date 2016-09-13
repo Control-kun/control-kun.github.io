@@ -55,7 +55,6 @@ body {
 	font-size: 24px;
 	min-width: 360px;
 	position: relative;
-	line-height: 24px;
 	font-family: "BebasRegular", sans-serif;
 	overflow-x: hidden;
 	background-color: #f3f2f2;
@@ -140,4 +139,63 @@ header {
 	color: #1755bb;
 }
 /*END TOP BANNER*/
+
+/*PRICES*/
+.prices-container {
+}
+.prices-wrapper {
+	width: 566px;
+	margin:0 auto;
+	background-color: white;
+}
+.prices-item {
+	height: 400px;
+	margin:0 auto;
+	margin-bottom: 20px;
+
+	padding: 250px 0 0 0;
+
+	border-radius: 5px;
+	box-shadow: 0px 1px 0px 0px #d3d3d3;
+
+	text-align: center;
+}
+.prices-wrapper {
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: -webkit-transform,box-shadow;
+	transition-property: transform,box-shadow;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.prices-wrapper:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 20px 25px rgba(0,0,0,.15);
+}
+.prices-item.prices-item_design {
+	background: url(../img/design.png) 50% 0% no-repeat;
+}
+.prices-item.prices-item_sample {
+	background: url(../img/sample.png) 50% 0% no-repeat;
+}
+.prices-item.prices-item_like {
+	background: url(../img/like.png) 50% 0% no-repeat;
+}
+
+.prices-header {
+	font-family: "BebasBold";
+	font-size:30px;
+	color: #313131;
+}
+.prices-text {
+	font-family: "BebasRegular";
+	font-size:24px;
+	color: #575757;
+	padding-top: 8px;
+}
 /* RCM END */
+
+
