@@ -14,25 +14,56 @@ $(function() {
 $( document ).ready(function() {
 	$('.production-slider').slick({
 		centerMode: true,
-		centerPadding: '60px',
+		centerPadding: '0px',
 		slidesToShow: 1,
 		responsive: [
 			{
 				breakpoint: 768,
 				settings: {
-					arrows: false,
+					arrows: true,
 					centerMode: true,
-					centerPadding: '72px',
+					centerPadding: '0px',
 					slidesToShow: 1
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true
+				}
+			},
+			{
+				breakpoint: 375,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true
+				}
+			},
+			{
+				breakpoint: 370,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true
 				}
 			},
 			{
 				breakpoint: 360,
 				settings: {
-					arrows: false,
-					centerMode: true,
-					centerPadding: '40px',
-					slidesToShow: 1
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true
 				}
 			}
 		]

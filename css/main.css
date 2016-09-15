@@ -200,6 +200,21 @@ header {
 	text-align: center;
 	margin-top: 40px;
 }
+.production-slider__slide {
+	width:588px;
+	height:423px;
+}
+.production-slider__slide__img {
+	width:568px;
+	height:423px;
+	margin:0 auto;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+.production-slider {
+	width:588px;
+	margin:0 auto;
+}
 /* RCM END */
 
 /* DERFEX */

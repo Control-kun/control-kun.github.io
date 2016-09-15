@@ -55,6 +55,22 @@
 		width: 238px;
 		margin: 0 auto;
 	}
+	.production-slider__slide {
+		width:360px;
+		height:347px;
+	}
+	.production-slider__slide__img {
+		width:348px;
+		height:347px;
+		margin:0 auto;
+		overflow: hidden;
+		background-repeat: no-repeat !important;
+		background-size:cover !important;
+	}
+	.production-slider {
+		width:360px;
+		margin:0 auto;
+	}
 
 	/*Disable Animation on Mobile Devices*/
 	.animated {
