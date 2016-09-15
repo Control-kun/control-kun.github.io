@@ -29,7 +29,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
+	body {
+		overflow:hidden;
+	}
 	.top-banner {
 		padding: 32px 0 0 6px;
 	}
@@ -100,6 +102,7 @@
 @media only screen and (max-width : 480px) {
 	body {
 		min-width: 360px;
+		overflow:hidden;
 	}
 
 }
