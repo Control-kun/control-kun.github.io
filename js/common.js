@@ -14,6 +14,7 @@ $(function() {
 $( document ).ready(function() {
 	$('.production-slider').slick({
 		centerMode: true,
+		dots:true,
 		centerPadding: '0px',
 		slidesToShow: 1,
 		responsive: [
