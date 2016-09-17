@@ -29,7 +29,6 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
-
 	.top-banner {
 		padding: 32px 0 0 6px;
 	}

@@ -218,7 +218,9 @@ header {
 	width:588px;
 	margin:0 auto;
 }
-
+.production {
+    overflow: hidden;
+}
 /* RCM END */
 
 /* DERFEX */
