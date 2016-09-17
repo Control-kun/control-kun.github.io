@@ -211,10 +211,14 @@ header {
 	background-size:cover;
 	background-repeat: no-repeat;
 }
+.production {
+    overflow: hidden;
+}
 .production-slider {
 	width:588px;
 	margin:0 auto;
 }
+
 /* RCM END */
 
 /* DERFEX */
