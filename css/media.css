@@ -24,11 +24,19 @@
     background-size: cover;
     padding: 32px 0 0 18px;
 }
-
+.contacts-container {
+	width:710px;
+}
+.contacts-wrapper:nth-child(3n + 1) {
+	margin-left:20px;
+}
+.contacts-wrapper:nth-child(2n + 1) {
+	margin-left:0;
+}
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 	.top-banner {
 		padding: 32px 0 0 6px;
 	}
@@ -69,6 +77,20 @@
 	.production-slider {
 		width:360px;
 		margin:0 auto;
+	}
+	
+	.contacts-container {
+		width:343px;
+	}
+	.contacts-wrapper:nth-child(3n + 1) {
+		margin-left:0px;
+	}
+	.contacts-wrapper:nth-child(2n + 1) {
+		margin-left:0;
+	}
+	.contacts-wrapper {
+		float:none;
+		margin-left:0px;
 	}
 
 	/*Disable Animation on Mobile Devices*/

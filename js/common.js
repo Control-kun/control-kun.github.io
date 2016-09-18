@@ -12,7 +12,7 @@ $(function() {
 
 });
 $( document ).ready(function() {
-	$('.production-slider').slick({
+	$('#production-slider,#instagramm-slider').slick({
 		centerMode: true,
 		dots:true,
 		centerPadding: '0px',

@@ -141,8 +141,6 @@ header {
 /*END TOP BANNER*/
 
 /*PRICES*/
-.prices-container {
-}
 .prices-wrapper {
 	width: 566px;
 	margin:0 auto;
@@ -218,8 +216,104 @@ header {
 	width:588px;
 	margin:0 auto;
 }
-.production {
-    overflow: hidden;
+/*END PRICES*/
+/*CONTACTS*/
+.instagramm {
+	overflow: hidden;
+}
+.contacts-container {
+	width:1070px;
+	margin:0 auto;
+	overflow: hidden;
+}
+.contacts-wrapper {
+	width:343px;
+	height: 343px;
+	margin:20px 0 0 20px;
+	float: left;
+	background-color: white;
+	border-radius: 5px;
+}
+.contacts-wrapper:nth-child(3n + 1) {
+	margin-left:0;
+}
+
+.contacts-item {
+	height: 343px;
+	width:344px;
+	margin:0 auto;
+	margin-bottom: 20px;
+
+	padding:238px 0 0 0;
+
+	box-shadow: 0px 1px 0px 0px #d3d3d3;
+
+	text-align: center;
+	
+}
+.contacts-wrapper {
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: -webkit-transform,box-shadow;
+	transition-property: transform,box-shadow;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.contacts-wrapper:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 20px 25px rgba(0,0,0,.15);
+}
+.contacts-item.contacts-item_phone {
+	background: url(../img/phone.png) 50% 0% no-repeat;
+}
+.contacts-item.contacts-item_messenge {
+	background: url(../img/messenge.png) 50% 0% no-repeat;
+}
+.contacts-item.contacts-item_email {
+	background: url(../img/email.png) 50% 0% no-repeat;
+}
+.contacts-item.contacts-item_address {
+	background: url(../img/address.png) 50% 0% no-repeat;
+}
+.contacts-item.contacts-item_worktime {
+	background: url(../img/worktime.png) 50% 0% no-repeat;
+}
+
+.contacts-header {
+	font-family: "BebasBold";
+	font-size:30px;
+	color: #313131;
+}
+.contacts-text {
+	font-family: "BebasRegular";
+	font-size:24px;
+	color: #575757;
+	padding-top: 8px;
+}
+.contacts-descr {
+	text-align: center;
+	margin-top: 40px;
+}
+.contacts-slider__slide {
+	width:588px;
+	height:423px;
+}
+.contacts-slider__slide__img {
+	width:568px;
+	height:423px;
+	margin:0 auto;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+.contacts {
+	overflow: hidden;
+}
+.contacts-slider {
+	width:588px;
+	margin:0 auto;
 }
 /* RCM END */
 
