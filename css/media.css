@@ -130,22 +130,34 @@
 }
 
 
-/*==========  Mobile First Method  ==========*/
+
+/* Media :: Mobile First Method
+*************************************************/
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
+
+}
+
+/* • Fortunum SM */
+@media only screen and (min-width : 360px) {
 	.frt-w-cards{width:100%}
 	.frt-figure{margin:10px auto}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+	.frt-figure{margin:10px}
+}
 
+/* • Fortunum MD */
+@media only screen and (min-width : 750px) {
+	.frt-w-cards{width:730px}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-	.frt-figure{margin:10px}
+
 }
 
 /* Medium Devices, Desktops */
@@ -155,6 +167,11 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
+
+}
+
+/* • Fortunum LG */
+@media only screen and (min-width : 1280px) {
 	.frt-w-cards{width:1090px}
 	.frt-figure{width:525px}
 }

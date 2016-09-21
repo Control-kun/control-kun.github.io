@@ -339,8 +339,8 @@ header {
 
 .frt-figure{
 	position:relative;
-	margin:0 auto 20px;
 	border-radius:5px;
+	background:#fff;
 	box-shadow:0 1px 0 0 #d3d3d3;
 	text-align:center;
 
