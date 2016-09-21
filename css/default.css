@@ -235,3 +235,48 @@ h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: у
 
 .dg-100.dg-img-box .dg-img{width:100%}
 /* derfex? */
+
+
+
+
+
+/* Media :: Mobile First Method
+*************************************************/
+.dg-w{width:100%;min-width:360px;max-width:1280px}
+.dg-ww{font-size:1.6em;padding:.625em}
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1280px) {
+
+}
+
+
+.dg-flexbox{display:flex;flex-wrap:wrap}
+.dg-flexbox-item{}
