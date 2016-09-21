@@ -317,6 +317,13 @@ header {
 }
 /* RCM END */
 
+
+/* I ♥ Bootstrap */
+.dg-link-wrap:hover,.dg-link-wrap:focus{color:inherit;text-decoration:underline}
+/* I ♥ Bootstrap END */
+
+
+
 /* DERFEX */
 .frt-title{font-size:40px;margin:2em 0 1em;font-family:BebasBold,sans-serif;text-align:center;color:#e31616}
 .frt-title .frt-title__underline{position:relative}
