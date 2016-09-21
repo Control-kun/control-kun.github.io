@@ -2,37 +2,37 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px) {
+	.menu-container {
+		display: none;
+	}
+	.header-phone__link {
+		color: #1755bb;
 
+	}
+	.header-phone__link:hover {
+		color: #1755bb;
+	}
+	.top-banner {
+		margin-top: 30px;
+		height: 482px;
+		background: url(../img/top-banner-1280.png);
+		background-size: cover;
+		padding: 32px 0 0 18px;
+	}
+	.contacts-container {
+		width:710px;
+	}
+	.contacts-wrapper:nth-child(3n + 1) {
+		margin-left:20px;
+	}
+	.contacts-wrapper:nth-child(2n + 1) {
+		margin-left:0;
+	}
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-.menu-container {
-	display: none;
-}
-.header-phone__link {
-	color: #1755bb;
 
-}
-.header-phone__link:hover {
-	color: #1755bb;
-}
-.top-banner {
-    margin-top: 30px;
-    height: 482px;
-    background: url(../img/top-banner-1280.png);
-    background-size: cover;
-    padding: 32px 0 0 18px;
-}
-.contacts-container {
-	width:710px;
-}
-.contacts-wrapper:nth-child(3n + 1) {
-	margin-left:20px;
-}
-.contacts-wrapper:nth-child(2n + 1) {
-	margin-left:0;
-}
 }
 
 /* Small Devices, Tablets */
