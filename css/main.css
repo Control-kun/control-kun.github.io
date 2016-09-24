@@ -335,22 +335,18 @@ header {
 
 
 
-.frt-w-cards{margin:0 auto;padding:10px 0}
+.frt-w-cards{margin:0 auto;padding:10px 0 20px}
 
 .frt-figure{
 	position:relative;
 	border-radius:5px;
+	width:345px;
+	height:calc(100% - 20px);
 	background:#fff;
 	box-shadow:0 1px 0 0 #d3d3d3;
 	text-align:center;
-
-	margin:10px;
-	width:345px;
-
 	box-shadow:0 1px 1px rgba(0,0,0,.1);
 	transform:translateZ(0);
-
-
 	transition-duration:.3s;
 	transition-property:transform,box-shadow;
 	transition-timing-function:ease-in-out;
