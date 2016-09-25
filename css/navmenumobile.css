@@ -1,21 +1,24 @@
 .frt-nav-mobile-panel{position:fixed;left:0;right:0;bottom:0;min-width:360px;background:#fff}
 .frt-nav-mobile-panel,.frt-nav-mobile-panel-substratum{height:80px}
 
-.frt-nav-mobile-panel{border-top:5px solid #9d9d9d}/* TODO: derfex- */
-
-
-
-
-.frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button{flex:1 auto;}
-.frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button-menu{flex: 0 auto;width:80px}
-.frt-nav-mobile-panel__button{position:relative;height:100%}
-.frt-nav-mobile-panel__button .dg-button{border:1px solid #e6e6e6;padding:10px}
+.frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button-box{flex:1 auto;}
+.frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button-box--menu{flex:0 auto;width:80px}
+.frt-nav-mobile-panel__button{position:relative;border:1px solid #e6e6e6;height:100%}
+.frt-nav-mobile-panel__button-inside{margin:auto}
+.frt-nav-mobile-panel__button-inside .frt-icon,.frt-nav-mobile-panel__button-inside .frt-text{vertical-align:middle}
 
 
 
 #frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu{display:none}
 #frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu{display:block}
 .frt-nav-mobile-menu{position:fixed;top:0;right:0;bottom:80px}
+
+.frt-icon{display:inline-block;width:24px;height:24px;font-style:normal;background-size:contain;background-position:center}
+.frt-icon.frt-icon--back{background-image:url(../img/nav-mobile-panel/icon-back.png)}
+.frt-icon.frt-icon--call{background-image:url(../img/nav-mobile-panel/icon-call.png)}
+.frt-icon.frt-icon--menu{background-image:url(../img/nav-mobile-panel/icon-menu.png);width:30px;height:30px}
+
+
 
 
 
@@ -49,7 +52,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.frt-nav-mobile-panel{display:none}
+	.menu-container{display:block !important}/* TODO: derfex- */
 }
 
 /* Large Devices, Wide Screens */
