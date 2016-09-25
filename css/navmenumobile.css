@@ -1,4 +1,10 @@
+.frt-nav-mobile-panel{position:fixed;bottom:0;height:80px;background:#fff}
+.frt-nav-mobile-panel{border-top:5px solid #9d9d9d}
 
+
+
+#frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu{display:none}
+#frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu{display:block}
 
 
 

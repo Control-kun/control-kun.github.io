@@ -142,12 +142,12 @@
 /* • Fortunum SM */
 @media only screen and (min-width : 360px) {
 	.frt-w-cards{width:100%}
-	.frt-figure{margin:10px auto}
+	.frt-card{margin:10px auto}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-	.frt-figure{margin:10px}
+	.frt-card{margin:10px}
 }
 
 /* • Fortunum MD */
@@ -173,5 +173,5 @@
 /* • Fortunum LG */
 @media only screen and (min-width : 1280px) {
 	.frt-w-cards{width:1090px}
-	.frt-figure{width:525px}
+	.frt-card{width:525px}
 }

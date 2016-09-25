@@ -12,6 +12,13 @@
 • #Virtuozno → #dg-Arcem
 • #Workspace → #dg-Workspace
 • vz-* → dg-*
+
+Версия 160920
+• .dg-link-wrap → .dg-link--wrap
+• .dg-OA, .dg-OH, .dg-OS, .dg-OV
+• .dg-TAL, .dg-TAR, .dg-TAC, .dg-TAJ
+• .dg-list → .dg-list.dg-list--inline-block
+• .dg-list → .dg-list.dg-list--flexbox
 */
 
 
@@ -34,7 +41,8 @@
 #ABS-C{z-index:5;max-height:50%;background:#400;color:#FFF;font-size:1.5em;padding:1em}/**/
 
 /* 151116 */.dg-FL{float:left}.dg-FR{float:right}
-.dg-OH{overflow:hidden}
+/* 160920 */.dg-TAL{text-align:left}.dg-TAR{text-align:right}.dg-TAC{text-align:center}.dg-TAJ{text-align:justify}
+/* 160920 */.dg-OA{overflow:auto}.dg-OH{overflow:hidden}.dg-OS{overflow:scroll}.dg-OV{overflow:visible}
 
 
 
@@ -178,13 +186,34 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-.dg-list{text-align:justify}
-.dg-list .dg-li{display:block}
-.dg-list[data-dg-cssquantis] .dg-li{display:inline-block}
-.dg-list[data-dg-cssquantis="2"] .dg-li{width:49%}
-.dg-list[data-dg-cssquantis="3"] .dg-li{width:32%}
-.dg-list[data-dg-cssquantis="4"] .dg-li{width:24%}
-.dg-list[data-dg-cssquantis="5"] .dg-li{width:19%}
+
+/* Lists & Grids / Списки и сетки
+//////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+.dg-list{list-style:none}
+
+
+.dg-list.dg-list--inline-block{text-align:justify}
+.dg-list.dg-list--inline-block>.dg-li{display:block}
+.dg-list.dg-list--inline-block[data-dg-cssquantis]>.dg-li{display:inline-block}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="2"]>.dg-li{width:49%}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="3"]>.dg-li{width:32%}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="4"]>.dg-li{width:24%}
+.dg-list.dg-list--inline-block[data-dg-cssquantis="5"]>.dg-li{width:19%}
+
+
+
+.dg-list--flexbox{display:flex;flex-wrap:wrap;justify-content:space-between}
+.dg-list.dg-list--flexbox>.dg-li{}
+
+
+/* FD, FW, FF, JC, AI, AC, FG, FS, FB, AS */
+.dg-flexbox{display:flex}
+.dg-flexbox .dg-flexbox--JC-center{justify-content:center}
+.dg-flexbox .dg-flexbox--JC-stretch{justify-content:stretch}
+.dg-flexbox .dg-flexbox--FW-nowrap{flex-wrap:nowrap}
+
 
 
 
