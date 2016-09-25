@@ -34,6 +34,7 @@
 #ABS-C{z-index:5;max-height:50%;background:#400;color:#FFF;font-size:1.5em;padding:1em}/**/
 
 /* 151116 */.dg-FL{float:left}.dg-FR{float:right}
+.dg-OH{overflow:hidden}
 
 
 
@@ -138,8 +139,8 @@
 
 /* Interface / Элементы интерфейса
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
-.dg-link,.dg-link-wrap{text-decoration:none;color:inherit}
-.dg-link-wrap{display:block}
+.dg-link,.dg-link--wrap{text-decoration:none;color:inherit}
+.dg-link--wrap{display:block}
 
 
 .dg-button{position:relative;cursor:pointer;text-decoration:none;text-align:center}
@@ -170,7 +171,8 @@
 .dg-button::selection,     .dg-button *::selection,     .dg-unselectable::selection,     .dg-unselectable *::selection     {background-color:transparent;color:inherit}
 .dg-button::-moz-selection,.dg-button *::-moz-selection,.dg-unselectable::-moz-selection,.dg-unselectable *::-moz-selection{background-color:transparent;color:inherit}
 
-.dg-Cfix::after{content:'';display:table;clear:both}
+.dg-fixC::before,.dg-fixC::after,.dg-fixMC::before,.dg-fixMC::after,.dg-fixCa::after,.dg-link--wrap::before,.dg-link--wrap::after{content:'';display:table}
+.dg-fixC::after,.dg-fixMC::after,.dg-fixCa::after{clear:both}
 
 /* ↑↑↑↑↑ Extra Usefulness / Дополнительные полезности
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -246,6 +248,7 @@ h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: у
 .dg-ww{font-size:1.6em;padding:.625em}
 
 .dg-flexbox{display:flex;flex-wrap:wrap;justify-content:center}
+.dg-flexbox.dg-flexbox--row{flex-wrap:nowrap;justify-content:stretch}
 .dg-flexbox-item{}
 
 /* Custom, iPhone Retina */
