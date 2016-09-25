@@ -337,7 +337,7 @@ header {
 
 .frt-w-cards{margin:0 auto;padding:10px 0 20px}
 
-.frt-figure{
+.frt-card{
 	position:relative;
 	border-radius:5px;
 	width:345px;
@@ -351,7 +351,7 @@ header {
 	transition-property:transform,box-shadow;
 	transition-timing-function:ease-in-out;
 }
-.frt-figure:hover{z-index:1;transform:translateY(-10px);box-shadow:0 20px 25px rgba(0,0,0,.15)}
+.frt-card:hover{z-index:1;transform:translateY(-10px);box-shadow:0 20px 25px rgba(0,0,0,.15)}
 
 
 
