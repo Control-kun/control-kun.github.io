@@ -3,7 +3,6 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="ru"> <!--<![endif]-->
-
 <head>
 
 	<meta charset="utf-8">
@@ -261,17 +260,25 @@
 	<div class="frt-nav-mobile-panel-substratum"></div>
 	<nav class="frt-nav-mobile-panel">
 		<ul class="dg-100 dg-list dg-list--flexbox dg-flexbox dg-flexbox--FW-nowrap dg-flexbox--JC-stretch">
-			<li class="dg-li frt-nav-mobile-panel__button">
-				<a href="/" class="dg-button dg-100">
-					Вернуться
+			<li class="dg-li frt-nav-mobile-panel__button-box">
+				<a href="/" class="dg-button dg-link--wrap dg-100 dg-flexbox">
+					<div class="frt-nav-mobile-panel__button-inside">
+						<i class="frt-icon frt-icon--back"></i>
+						<span class="frt-text">Вернуться</span>
+					</div>
 				</a>
-			<li class="dg-li frt-nav-mobile-panel__button">
-				<a href="#" class="dg-button dg-100">
-					Заказать звонок
+			<li class="dg-li frt-nav-mobile-panel__button-box">
+				<a href="#" class="frt-nav-mobile-panel__button dg-button dg-link--wrap dg-100 dg-flexbox">
+					<div class="frt-nav-mobile-panel__button-inside">
+						<i class="frt-icon frt-icon--call"></i>
+						<span class="frt-text">Заказать звонок</span>
+					</div>
 				</a>
-			<li class="dg-li frt-nav-mobile-panel__button frt-nav-mobile-panel__button-menu">
-				<label for="frt-nav-mobile-menu__switch" class="dg-button">
-					<i class="dg-icon">=</i>
+			<li class="dg-li frt-nav-mobile-panel__button-box frt-nav-mobile-panel__button-box--menu">
+				<label for="frt-nav-mobile-menu__switch" class="dg-button dg-link--wrap dg-100 dg-flexbox" title="Показать навигационное меню">
+					<div class="frt-nav-mobile-panel__button-inside">
+						<i class="frt-icon frt-icon--menu"></i>
+					</div>
 				</label>
 				<input id="frt-nav-mobile-menu__switch" type="checkbox" hidden>
 				<ul class="frt-nav-mobile-menu">
