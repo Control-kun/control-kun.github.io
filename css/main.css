@@ -1,3 +1,7 @@
+/* from bootstrap-grids.min.css */
+*,*:before,*:after{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}
+
+
 *::-webkit-input-placeholder {
 	color: #666;
 	opacity: 1;
