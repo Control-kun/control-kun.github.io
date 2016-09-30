@@ -135,29 +135,31 @@
 *************************************************/
 
 /* Custom, iPhone Retina */
+/* Media :: Mobile First Method
+*************************************************/
+
+/* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
 
 }
 
-/* • Fortunum SM */
+/* Fortunum SM */
 @media only screen and (min-width : 360px) {
-	.frt-w-cards{width:100%}
-	.frt-card{margin:10px auto}
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-	.frt-card{margin:10px}
+
 }
 
-/* • Fortunum MD */
+/* Fortunum MD */
 @media only screen and (min-width : 750px) {
-	.frt-w-cards{width:730px}
+	.dg-flexbox{display:flex;flex-wrap:wrap;justify-content:flex-start}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
 }
 
 /* Medium Devices, Desktops */
@@ -170,8 +172,7 @@
 
 }
 
-/* • Fortunum LG */
+/* Fortunum LG */
 @media only screen and (min-width : 1280px) {
-	.frt-w-cards{width:1090px}
-	.frt-card{width:525px}
+
 }

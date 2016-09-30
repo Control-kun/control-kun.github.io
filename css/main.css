@@ -107,6 +107,10 @@ header {
 .menu-link:focus {
 	text-decoration: none;
 }
+.menu-link.selected {
+	color: #bf1010;
+	text-decoration: none;
+}
 
 .menu-container ul li {
 	float: left;
@@ -135,6 +139,16 @@ header {
 
 	padding: 32px 0 0 105px;
 }
+.top-banner.cabinets {
+	background:url(../img/top-banner-cabinets-1280.png);
+	background-size: cover;
+}
+.cabinets .top-banner__text {
+	font-family: "BebasBold";
+	font-size:48px;
+	line-height:48px;
+	color: #252525;
+}
 .top-banner__text {
 	font-family: "BebasBold";
 	font-size:60px;
@@ -148,6 +162,9 @@ header {
 	width: 566px;
 	margin:0 auto;
 	background-color: white;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
 }
 .prices-item {
 	height: 400px;
@@ -237,6 +254,9 @@ header {
 	float: left;
 	background-color: white;
 	border-radius: 5px;
+}
+.contacts-wrapper a {
+	text-decoration: none;
 }
 .contacts-wrapper:nth-child(3n + 1) {
 	margin-left:0;
