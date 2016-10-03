@@ -9,18 +9,21 @@
 .frt-nav-mobile-panel__button-inside{margin:auto}
 .frt-nav-mobile-panel__button-inside .frt-icon,.frt-nav-mobile-panel__button-inside .frt-text{vertical-align:middle}
 
-
-
-#frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu{display:none}
-#frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu{display:block}
-.frt-nav-mobile-menu{position:fixed;top:0;right:0;bottom:80px}
-
 .frt-icon{display:inline-block;width:24px;height:24px;font-style:normal;background-size:contain;background-position:center}
 .frt-icon.frt-icon--back{background-image:url(../img/nav-mobile-panel/icon-back.png)}
 .frt-icon.frt-icon--call{background-image:url(../img/nav-mobile-panel/icon-call.png)}
 .frt-icon.frt-icon--menu{background-image:url(../img/nav-mobile-panel/icon-menu.png);width:30px;height:30px}
 
 
+
+#frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu{display:none}
+#frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu{display:block}
+.frt-nav-mobile-menu{position:fixed;top:0;right:0;bottom:80px;padding:84px 0;width:290px}
+
+.frt-nav-mobile-menu{background:#00bbec;font-size:40px;color:#fff}
+.frt-nav-mobile-menu .dg-button{padding:16px 24px}
+.frt-nav-mobile-menu .frt-nav-mobile-menu__li--extra{margin-top:48px}
+.frt-nav-mobile-menu .frt-nav-mobile-menu__link--extra{font-size:30px}
 
 
 
@@ -44,7 +47,8 @@
 
 /* • Fortunum MD */
 @media only screen and (min-width : 750px) {
-
+	.frt-nav-mobile-menu{width:640px}
+	.frt-nav-mobile-menu .dg-button{padding:16px 100px}
 }
 
 /* Small Devices, Tablets */
@@ -54,7 +58,8 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-
+	.frt-nav-mobile-panel-substratum{display:none}
+	.menu-container{display:block !important}/* TODO: derfex- */
 }
 
 /* Large Devices, Wide Screens */

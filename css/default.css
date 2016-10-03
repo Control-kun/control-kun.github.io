@@ -43,6 +43,13 @@
 /* 151116 */.dg-FL{float:left}.dg-FR{float:right}
 /* 160920 */.dg-TAL{text-align:left}.dg-TAR{text-align:right}.dg-TAC{text-align:center}.dg-TAJ{text-align:justify}
 /* 160920 */.dg-OA{overflow:auto}.dg-OH{overflow:hidden}.dg-OS{overflow:scroll}.dg-OV{overflow:visible}
+/* 161003 */.dg-FL_i{float:left!important}.dg-FR_i{float:right!important}
+/* 161003 */.dg-TAL_i{text-align:left!important}.dg-TAR_i{text-align:right!important}.dg-TAC_i{text-align:center!important}.dg-TAJ_i{text-align:justify!important}
+/* 161003 */.dg-OA_i{overflow:auto!important}.dg-OH_i{overflow:hidden!important}.dg-OS_i{overflow:scroll!important}.dg-OV_i{overflow:visible!important}
+/* 161003 */.dg-OxA{overflow-x:auto}.dg-OxH{overflow-x:hidden}.dg-OxS{overflow-x:scroll}.dg-OxV{overflow-x:visible}
+/* 161003 */.dg-OyA{overflow-y:auto}.dg-OyH{overflow-y:hidden}.dg-OyS{overflow-y:scroll}.dg-OyV{overflow-y:visible}
+/* 161003 */.dg-OxA_i{overflow-x:auto!important}.dg-OxH_i{overflow-x:hidden!important}.dg-OxS_i{overflow-x:scroll!important}.dg-OxV_i{overflow-x:visible!important}
+/* 161003 */.dg-OyA_i{overflow-y:auto!important}.dg-OyH_i{overflow-y:hidden!important}.dg-OyS_i{overflow-y:scroll!important}.dg-OyV_i{overflow-y:visible!important}
 
 
 
