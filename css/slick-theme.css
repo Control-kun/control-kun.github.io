@@ -78,10 +78,10 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-.slick-prev
-{
-    left: 0px;
-}
+/*.slick-prev*/
+/*{*/
+    /*left: 0px;*/
+/*}*/
 [dir='rtl'] .slick-prev
 {
     right: -25px;
@@ -106,10 +106,10 @@
     margin:0 auto;
 }
 
-.slick-next
-{
-    right: 0px;
-}
+/*.slick-next*/
+/*{*/
+    /*right: 0px;*/
+/*}*/
 [dir='rtl'] .slick-next
 {
     right: auto;
@@ -122,7 +122,6 @@
 {
     margin-bottom: 40px;
 }
-
 .slick-dots
 {
     position: absolute;
