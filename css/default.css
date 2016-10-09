@@ -201,6 +201,8 @@
 .dg-flexbox.dg-flexbox--FD-column-reverse{flex-direction:column-reverse}
 
 .dg-flexbox.dg-flexbox--FW-nowrap{flex-wrap:nowrap}
+.dg-flexbox.dg-flexbox--FW-wrap{flex-wrap:wrap}
+.dg-flexbox.dg-flexbox--FW-wrap-reverse{flex-wrap:wrap-reverse}
 
 .dg-flexbox.dg-flexbox--JC-flex-start{justify-content:flex-start}
 .dg-flexbox.dg-flexbox--JC-flex-end{justify-content:flex-end}
@@ -212,21 +214,19 @@
 
 .dg-flexbox.dg-flexbox--AC-stretch{align-content:stretch}
 
-
-
-
-/*.dg-flexbox .dg-flexbox--FG-0{flex-grow:0}*/
-/*.dg-flexbox .dg-flexbox--FG-1{flex-grow:1}*/
-/*.dg-flexbox .dg-flexbox--FS-0{flex-shrink:0}*/
-/*.dg-flexbox .dg-flexbox--FS-1{flex-shrink:1}*/
 .dg-fi--half{flex:1 0 50%}
 .dg-fi--third{flex:1 0 33%}
 .dg-fi--fourth{flex:1 0 25%}
 
-
 .dg-flexbox .dg-flexbox--AS-flex-start{align-self:flex-start}
 .dg-flexbox .dg-flexbox--AS-flex-end{align-self:flex-end}
 
+
+/* TODO */
+/*.dg-flexbox{display:flex;flex-wrap:wrap;justify-content:center}*/
+.dg-fi{}
+.dg-grid{}
+.dg-gi{}
 
 
 
@@ -301,12 +301,6 @@ h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: у
 .dg-ww{font-size:1.6em;padding:.625em}
 .dg-w{width:100%;min-width:300px;max-width:1280px}
 .dg-ww{font-size:1.6em;padding:.625em}
-
-/* TODO */
-/*.dg-flexbox{display:flex;flex-wrap:wrap;justify-content:center}*/
-.dg-fi{}
-.dg-grid{}
-.dg-gi{}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
