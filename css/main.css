@@ -228,18 +228,42 @@ header {
 	margin:0 auto;
 	background-size:cover;
 	background-repeat: no-repeat;
+	object-fit: cover;
 }
 .production {
     overflow: hidden;
+	position: relative;
 }
 .production-slider {
 	width:588px;
 	margin:0 auto;
 }
+
+.slick-prev
+{
+	left: 70px;
+}
+.slick-next
+{
+	right: 70px;
+}
+.slick-dots {
+	position: absolute;
+	bottom: 0px !important;
+	display: block;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-align: center;
+	left:0;
+	right:0;
+}
 /*END PRICES*/
 /*CONTACTS*/
 .instagramm {
 	overflow: hidden;
+	position: relative;
 }
 .contacts-container {
 	width:1070px;
