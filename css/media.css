@@ -133,6 +133,9 @@
 
 /* Media :: Mobile First Method
 *************************************************/
+.dg-w{min-width:360px}/* body{min-w:360px}*/
+.dg-ww{font-size:inherit;padding-left:6px;padding-right:6px;min-width:360px}
+.dg-ww.frt-ww--cards{margin:0 auto;padding:10px 0 20px}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -141,7 +144,9 @@
 
 /* • Fortunum SM */
 @media only screen and (min-width : 360px) {
-	.frt-w-cards{width:100%}
+	.frt-w{}
+	.frt-ww{}
+	.frt-ww--cards{width:100%}
 	.frt-card{margin:10px auto}
 }
 
@@ -152,7 +157,8 @@
 
 /* • Fortunum MD */
 @media only screen and (min-width : 750px) {
-	.frt-w-cards{width:730px}
+	.dg-ww{padding-left:20px;padding-right:20px}
+	.dg-ww.frt-ww--cards{width:730px}
 }
 
 /* Small Devices, Tablets */
@@ -172,6 +178,7 @@
 
 /* • Fortunum LG */
 @media only screen and (min-width : 1280px) {
-	.frt-w-cards{width:1090px}
+	.dg-ww{padding-left:0;padding-right:0;width:1200px;margin-left:auto;margin-right:auto}
+	.dg-ww.frt-ww--cards{width:1090px}
 	.frt-card{width:525px}
 }

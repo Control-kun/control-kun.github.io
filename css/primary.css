@@ -84,7 +84,7 @@ blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}
 table{border-collapse:collapse;border-spacing:0}
 
 /* 007. Отдельный сброс для ссылок */
-a {
+a{
 outline:none;/*Убираем границу вокруг ссылок*/
 margin:0;
 padding:0;
@@ -93,7 +93,7 @@ vertical-align:baseline;
 background:transparent;
 }
 /* Уже использовалось так: */
-a {cursor:pointer;text-decoration:none}
+a{cursor:pointer;text-decoration:none}
 /* derfex:
 a:link          {color:#0267FF}
 a:visited       {color:#B413D3}
@@ -104,13 +104,13 @@ a:visited:focus {color:#770081}
 a:active        {color:#000000}
 /**/
 /*
-#Virtuozno a:link          {color:#00A5FF}
-#Virtuozno a:hover         {color:#FFA500}
-#Virtuozno a:focus         {color:#004DC0; outline: 5px solid red;}
-#Virtuozno a:active        {color:#000000}
-#Virtuozno a:visited       {color:#FFA555}
-#Virtuozno a:visited:hover {color:#9501B3}
-#Virtuozno a:visited:focus {color:#770081}/**/
+#dg-Arcem a:link          {color:#00A5FF}
+#dg-Arcem a:hover         {color:#FFA500}
+#dg-Arcem a:focus         {color:#004DC0; outline: 5px solid red;}
+#dg-Arcem a:active        {color:#000000}
+#dg-Arcem a:visited       {color:#FFA555}
+#dg-Arcem a:visited:hover {color:#9501B3}
+#dg-Arcem a:visited:focus {color:#770081}/**/
 /*FF:
 *|*:link { color: #00E; }
 *|*:-moz-any-link:active { color: #E00; }/**/
@@ -119,8 +119,8 @@ a:active        {color:#000000}
 del{text-decoration:line-through}
 ins{background-color:#ff9;color:#000;text-decoration:none}/* derfex: Установить цвета в соответствии с цветовой схемой */
 /*derfex-: from GitHub*/
-del{background-color:#FFEAEA;color:#A33}
-ins{background-color:#EAFFEA;/*border-bottom:1px solid #3CB371;*/}
+del{background-color:#ffeaea;color:#a33}
+ins{background-color:#eaffea;/*border-bottom:1px solid #3cb371;*/}
 
 /* 009. Mark: выделить слово для пользователя */
 mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}/* derfex: Установить цвета в соответствии с цветовой схемой */
@@ -130,7 +130,7 @@ mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}/* derf
 abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}/* derfex: (?) content-box */
 
 /* 011. Горизонтальный разделитель *//* derfex: Установить цвета в соответствии с цветовой схемой */
-hr{display:block;margin:1em 0;border:0;border-top:1px solid #CCC;padding:0;height:1px}
+hr{display:block;margin:1em 0;border:0;border-top:1px solid #ccc;padding:0;height:1px}
 
 /* 012. Вертикальное выравнивание по середине */
 input,select{vertical-align:middle}

@@ -1,7 +1,7 @@
 .frt-nav-mobile-panel{position:fixed;z-index:1000;left:0;right:0;bottom:0;min-width:360px;background:#fff;font-size:20px}/* TODO: slick-carousel use z-index:999; можно меньше? */
 .frt-nav-mobile-panel,.frt-nav-mobile-panel-substratum{height:80px}
 
-.frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button-box{flex:1 auto;}
+.frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button-box{flex:1 auto}
 .frt-nav-mobile-panel .dg-list.dg-list--flexbox .frt-nav-mobile-panel__button-box--menu{flex:0 auto;width:80px}
 .frt-nav-mobile-panel__button{position:relative;height:100%}
 .frt-nav-mobile-panel__button-box .frt-nav-mobile-panel__button{border:1px solid #e6e6e6;border-right-width:0}
@@ -24,6 +24,13 @@
 .frt-nav-mobile-menu .dg-button{padding:16px 24px}
 .frt-nav-mobile-menu .frt-nav-mobile-menu__li--extra{margin-top:48px}
 .frt-nav-mobile-menu .frt-nav-mobile-menu__link--extra{font-size:30px}
+
+
+
+.frt-footer{}
+.frt-footer .frt-title.dg-title.dg-title4{margin-bottom:16px}
+.frt-footer__linkset{margin-right:50px}
+.frt-footer__linkset .dg-li{margin:10px 0}
 
 
 
