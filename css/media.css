@@ -27,6 +27,28 @@
 	.contacts-wrapper:nth-child(2n + 1) {
 		margin-left:0;
 	}
+
+	.projects-container {
+		overflow:hidden;
+		width:608px;
+		margin:0 auto;
+		padding: 40px 20px 30px 20px;
+
+		text-align: center;
+	}
+	.projects-item {
+		width:568px;
+		margin-right:0px;
+		margin-bottom:20px;
+
+		border-radius: 5px;
+		box-shadow: 0px 1px 0px 0px #d3d3d3;
+	}
+	.projects-img {
+		height:337px;
+		object-fit: cover;
+		width: 568px;
+	}
 }
 
 /* Medium Devices, Desktops */
@@ -116,6 +138,28 @@
 	.slick-slider {
 		position: relative;
 	}
+
+	.projects-container {
+		overflow:hidden;
+		width:348px;
+		margin:0 auto;
+		padding: 40px 0px 30px 0px;
+
+		text-align: center;
+	}
+	.projects-item {
+		width:348px;
+		margin-right:0px;
+		margin-bottom:20px;
+	}
+	.projects-img {
+		height:337px;
+		object-fit: cover;
+		width: 348px;
+	}
+
+
+
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/

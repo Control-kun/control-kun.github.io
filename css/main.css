@@ -266,10 +266,11 @@ header {
 	position: relative;
 }
 .contacts-container {
-	width:1070px;
-	margin:0 auto;
+	width: 1109px;
+	margin: 0 auto;
 	overflow: hidden;
-	margin-bottom:60px;
+	margin-bottom: 30px;
+	padding: 0 20px 30px 20px;
 }
 .contacts-wrapper {
 	width:343px;
@@ -363,6 +364,63 @@ header {
 	width:588px;
 	margin:0 auto;
 }
+/*PROJECTS PAGE*/
+.projects-container {
+	overflow:hidden;
+	width:1110px;
+	margin:0 auto;
+	padding: 40px 20px 30px 20px;
+
+	text-align: center;
+}
+.projects-item {
+	width:525px;
+	float: left;
+	margin-right:20px;
+	margin-top: 20px;
+	overflow: hidden;
+
+	border-radius: 5px;
+	box-shadow: 0px 1px 0px 0px #d3d3d3;
+}
+.projects-item {
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s;
+	-webkit-transition-property: -webkit-transform,box-shadow;
+	transition-property: transform,box-shadow;
+	-webkit-transition-timing-function: ease-in-out;
+	transition-timing-function: ease-in-out;
+	box-shadow: 0 1px 1px rgba(0,0,0,.1);
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+}
+.projects-item:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 20px 25px rgba(0,0,0,.15);
+}
+.projects-item:nth-child(2n) {
+	margin-right:0;
+}
+.projects-img {
+	height:337px;
+	object-fit: cover;
+	width: 525px;
+
+}
+.projects-header {
+	font-family: "BebasBold";
+	font-size:40px;
+	color: #313131;
+
+	display: block;
+	margin-top: 46px;
+}
+.projects-descr {
+	color: #575757;
+	margin-top: 15px;
+	padding-bottom:50px;
+}
+/*END PROJECTS PAGE*/
 /* RCM END */
 
 
