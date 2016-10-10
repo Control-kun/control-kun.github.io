@@ -344,6 +344,7 @@ h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: у
 
 
 
+.dg-center-clamp{display:table;margin:auto}
 /* Одиночные правила
 *************************************************/
 /* 151116 */.dg-FL{float:left}.dg-FR{float:right}
