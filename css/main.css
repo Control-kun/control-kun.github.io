@@ -426,6 +426,10 @@ h6.dg-title.frt-title,.dg-title6.frt-title{font-size:1.07em;margin:2.33em 0}
 .dg-button.frt-button:hover{z-index:1;transform:translateY(-5px);box-shadow:0 3px 5px #1488a2}
 .dg-button.frt-button:active{z-index:1;transform:translateY(1px);box-shadow:none}
 
+.dg-button.frt-button.frt-button--switch{border:1px solid #e3e3e3;background:#fff;color:#575757;font-weight:700;transform:translateY(0);box-shadow:none}
+.dg-button.frt-button.frt-button--switch.frt-button--switch-current{border-color:#16bee5;background:#17c6ee;color:#fff;box-shadow:0 11px 27px #28b2d2;z-index:1;transform:translateY(-7px)}
+
+
 
 /* Карточки
 *************************************************/
