@@ -21,13 +21,16 @@
 	.contacts-container {
 		width:710px;
 	}
-	.contacts-wrapper:nth-child(3n + 1) {
-		margin-left:20px;
+	/*.contacts-wrapper:nth-child(3n + 1) {*/
+		/*margin-left:20px;*/
+	/*}*/
+	/*.contacts-wrapper:nth-child(2n + 1) {*/
+		/*margin-left:0;*/
+	/*}*/
+	.contacts-wrapper {
+		float: none;
+		margin:20px auto !important;
 	}
-	.contacts-wrapper:nth-child(2n + 1) {
-		margin-left:0;
-	}
-
 	.projects-container {
 		overflow:hidden;
 		width:608px;
@@ -102,6 +105,7 @@
 	
 	.contacts-container {
 		width:343px;
+		padding: 0;
 	}
 	.contacts-wrapper:nth-child(3n + 1) {
 		margin-left:0px;
@@ -187,9 +191,113 @@
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
 	body {
-		min-width: 360px;
+
 	}
 
+}
+@media only screen and (max-width : 360px) {
+	.header-phone__link {
+		font-size:28px;
+	}
+	.top-banner {
+		padding: 32px 0 0 12px;
+	}
+	.prices-wrapper {
+		width: 300px;
+		margin:0 auto;
+	}
+	.prices-item {
+		width: 300px;
+		padding: 250px 10px 0 10px;
+	}
+	.prices-text {
+		font-size: 18px;
+		padding-top: 25px;
+	}
+
+	.price-descr {
+		width: 238px;
+		margin: 0 auto;
+	}
+	.production-slider__slide {
+		width:320px;
+		height:316px;
+	}
+	.production-slider__slide__img {
+		width:320px;
+		height:316px;
+		margin:0 auto;
+		overflow: hidden;
+		background-repeat: no-repeat !important;
+		background-size:cover !important;
+	}
+	.production-slider {
+		width:320px;
+		margin:0 auto;
+	}
+
+	.contacts-container {
+		width:320px;
+		padding: 0;
+	}
+	.contacts-wrapper:nth-child(3n + 1) {
+		margin-left:0px;
+	}
+	.contacts-wrapper:nth-child(2n + 1) {
+		margin-left:0;
+	}
+	.contacts-wrapper {
+		float:none;
+		margin-left:0px;
+		width:320px;
+	}
+	.contacts-item {
+		width:320px;
+	}
+	.slick-prev
+	{
+		left: 0px;
+	}
+	.slick-next
+	{
+		right: 0px;
+	}
+	.slick-dots {
+		position: absolute;
+		bottom: -39px;
+
+		display: block;
+
+		width: 100%;
+		padding: 0;
+		margin: 0;
+
+		list-style: none;
+
+		text-align: center;
+	}
+	.slick-slider {
+		position: relative;
+	}
+
+	.projects-container {
+		overflow:hidden;
+		width:348px;
+		margin:0 auto;
+		padding: 40px 0px 30px 0px;
+
+		text-align: center;
+	}
+	.projects-item {
+		width:348px;
+		margin-right:0px;
+		margin-bottom:20px;
+	}
+	.projects-img {
+		height:337px;
+		object-fit: cover;
+		width: 348px;
+	}
 }
 
 /* Custom, iPhone Retina */
