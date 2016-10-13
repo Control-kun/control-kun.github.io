@@ -19,6 +19,12 @@
 • .dg-TAL, .dg-TAR, .dg-TAC, .dg-TAJ
 • .dg-list → .dg-list.dg-list--inline-block
 • .dg-list → .dg-list.dg-list--flexbox
+
+Версия 161014
+• .dg-list — вскоре будет именно списком маркированным или нумерванным.
+• .dg-list.dg-list--inline-block → .dg-set.dg-set--inline-block
+• .dg-list.dg-list--flexbox      → .dg-set.dg-set--flexbox
+• .dg-fi--pct20, .dg-fi--pct25 (.dg-fi--fourth), .dg-fi--pct33 (.dg-fi--third), .dg-fi--pct50 (.dg-fi--half), .dg-fi--pct66, .dg-fi--pct75
 */
 
 
@@ -155,7 +161,6 @@
 .dg-button,.dg-button *,.dg-unselectable,.dg-unselectable *{
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
-	 -khtml-user-select: none;
 	   -moz-user-select: none;
 	    -ms-user-select: none;
 	        user-select: none;
@@ -175,9 +180,11 @@
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
-.dg-list{list-style:none}/* TODO?: .dg-list* → .dg-set* */
+.dg-list{list-style:none}/* TODO?: .dg-list* → .dg-set* *//* TODO: derfex- */
+.dg-set{list-style:none}
 
 
+/* TODO: derfex- */
 .dg-list.dg-list--inline-block{text-align:justify}
 .dg-list.dg-list--inline-block>.dg-li{display:block}
 .dg-list.dg-list--inline-block[data-dg-cssquantis]>.dg-li{display:inline-block}
@@ -185,11 +192,21 @@
 .dg-list.dg-list--inline-block[data-dg-cssquantis="3"]>.dg-li{width:32%}
 .dg-list.dg-list--inline-block[data-dg-cssquantis="4"]>.dg-li{width:24%}
 .dg-list.dg-list--inline-block[data-dg-cssquantis="5"]>.dg-li{width:19%}
+.dg-set.dg-set--inline-block{text-align:justify}
+.dg-set.dg-set--inline-block>.dg-li{display:block}
+.dg-set.dg-set--inline-block[data-dg-cssquantis]>.dg-li{display:inline-block}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="2"]>.dg-li{width:49%}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="3"]>.dg-li{width:32%}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="4"]>.dg-li{width:24%}
+.dg-set.dg-set--inline-block[data-dg-cssquantis="5"]>.dg-li{width:19%}
 
 
 
+/* TODO: derfex- */
 .dg-list--flexbox{display:flex;flex-wrap:wrap;justify-content:space-between}
 .dg-list.dg-list--flexbox>.dg-li{}
+.dg-set--flexbox{display:flex;flex-wrap:wrap;justify-content:space-between}
+.dg-set.dg-set--flexbox>.dg-fi{}
 
 
 /* FD, FW, FF, JC, AI, AC, FG, FS, FB, AS */
@@ -214,9 +231,12 @@
 
 .dg-flexbox.dg-flexbox--AC-stretch{align-content:stretch}
 
-.dg-fi--half{flex:1 0 50%}
-.dg-fi--third{flex:1 0 33%}
-.dg-fi--fourth{flex:1 0 25%}
+.dg-fi--pct20{flex:1 0 20%}
+.dg-fi--pct25,.dg-fi--fourth{flex:1 0 25%}
+.dg-fi--pct33,.dg-fi--third{flex:1 0 33.333%}
+.dg-fi--pct50,.dg-fi--half{flex:1 0 50%}
+.dg-fi--pct66{flex:1 0 66.666%}
+.dg-fi--pct75{flex:1 0 75%}
 
 .dg-flexbox .dg-flexbox--AS-flex-start{align-self:flex-start}
 .dg-flexbox .dg-flexbox--AS-flex-end{align-self:flex-end}

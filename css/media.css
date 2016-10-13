@@ -309,9 +309,10 @@
 
 /* Media :: Mobile First Method
 *************************************************/
-.dg-w{min-width:360px}/* body{min-w:360px}*/
-.dg-ww{font-size:inherit;padding-left:6px;padding-right:6px;min-width:360px}
-.dg-ww.frt-ww--cards{margin:0 auto;padding:10px 0 20px}
+.dg-w{min-width:320px}/* body{min-w:320px}*/
+.dg-ww{font-size:inherit;padding-left:6px;padding-right:6px;min-width:320px}
+.dg-ww.frt-ww--cards{margin:0 auto;padding:10px 10px 20px;width:100%}
+.frt-card{margin:10px auto}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -320,14 +321,13 @@
 
 /* • Fortunum SM */
 @media only screen and (min-width : 360px) {
-	.frt-w{}
-	.frt-ww{}
-	.frt-ww--cards{width:100%}
-	.frt-card{margin:10px auto}
+	.frt-card{width:345px}
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
+	.frt-section-works .dg-ww.frt-ww--cards>.dg-list,/* TODO: derfex- */
+	.frt-section-works .dg-ww.frt-ww--cards>.dg-set{margin-left:-10px;margin-right:-10px}
 	.frt-card{margin:10px}
 }
 
