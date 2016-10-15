@@ -24,7 +24,7 @@
     border-radius: 5px;
 
     position: absolute;
-    top: calc(50% - 61px);
+    top: calc(50% - 41px);
 
     display: block;
 
@@ -125,7 +125,7 @@
 .slick-dots
 {
     position: absolute;
-    bottom: -39px;
+    bottom: 0px;
 
     display: block;
 
