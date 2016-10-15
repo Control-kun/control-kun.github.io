@@ -1,4 +1,4 @@
-.frt-nav-mobile-panel{position:fixed;z-index:1000;left:0;right:0;bottom:0;min-width:360px;background:#fff;font-size:20px}/* TODO: slick-carousel use z-index:999; можно меньше? */
+.frt-nav-mobile-panel{position:fixed;z-index:1000;left:0;right:0;bottom:0;min-width:320px;background:#fff;font-size:20px}/* TODO: slick-carousel use z-index:999; можно меньше? */
 .frt-nav-mobile-panel,.frt-nav-mobile-panel-substratum{height:80px}
 
 .frt-nav-mobile-panel .dg-set.dg-set--flexbox .frt-nav-mobile-panel__button-box{flex:1 auto}
@@ -7,23 +7,28 @@
 .frt-nav-mobile-panel__button-box .frt-nav-mobile-panel__button{border:1px solid #e6e6e6;border-right-width:0}
 .frt-nav-mobile-panel__button-box--menu .frt-nav-mobile-panel__button{border-width:1px}
 .frt-nav-mobile-panel__button-inside{margin:auto}
-.frt-nav-mobile-panel__button-inside .frt-icon,.frt-nav-mobile-panel__button-inside .frt-text{vertical-align:middle}
 
 .frt-nav-mobile-panel__button .dg-ico.frt-ico{display:inline-block;width:24px;height:24px;background-size:contain;background-position:center}
 .frt-nav-mobile-panel__button .dg-ico.frt-ico.frt-ico--back{background-image:url(../img/nav-mobile-panel/icon-back.png)}
 .frt-nav-mobile-panel__button .dg-ico.frt-ico.frt-ico--call{background-image:url(../img/nav-mobile-panel/icon-call.png)}
 .frt-nav-mobile-panel__button .dg-ico.frt-ico.frt-ico--menu{background-image:url(../img/nav-mobile-panel/icon-menu.png);width:30px;height:30px}
-.frt-nav-mobile-panel__button .dg-txt.frt-txt{font-size:18px;line-height:24px;vertical-align:top;color:#313131}
+.frt-nav-mobile-panel__button .dg-txt.frt-txt{font-size:18px;color:#313131}
+.frt-nav-mobile-panel__button-inside .dg-ico.frt-ico,.frt-nav-mobile-panel__button-inside .dg-txt.frt-txt{vertical-align:middle}
 
 
-#frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu{display:none}
-#frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu{display:block}
-.frt-nav-mobile-menu{position:fixed;top:0;right:0;bottom:80px;padding:84px 0;width:290px}
+#frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu__box{transform:translateX(100%)}
+#frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu__box{transform:translateX(0)}
+.frt-nav-mobile-menu__box{position:fixed;top:0;right:0;bottom:80px;width:290px;background:#00bbec;font-size:30px;color:#fff;transition:transform .3s ease-in-out}
 
-.frt-nav-mobile-menu{background:#00bbec;font-size:40px;color:#fff}
-.frt-nav-mobile-menu .dg-button{padding:16px 24px}
+.frt-nav-mobile-menu{position:absolute;bottom:0;left:0;padding:5px 0;max-height:100%}
+.frt-nav-mobile-menu .dg-button{padding:11px 24px}
 .frt-nav-mobile-menu .frt-nav-mobile-menu__li--extra{margin-top:48px}
 .frt-nav-mobile-menu .frt-nav-mobile-menu__link--extra{font-size:30px}
+
+.frt-nav-mobile-menu__logo{padding:24px;display:none}
+@media only screen and (min-height : 660px) {
+	.frt-nav-mobile-menu__logo{display:block}
+}
 
 
 

@@ -519,3 +519,16 @@ h6.dg-title.frt-title,.dg-title6.frt-title{font-size:1.07em;margin:2.33em 0}
 	transition-timing-function:ease-in-out;
 }
 /* DERFEX END */
+
+
+/* FIXME: не работает 'height:100%' в растянутых дочерних элементах с flex-родителем.
+|  Это касается браузеров даже 2015 года. Например, Google Chrome 44.0.2403.130 (06.08.2015).
+*************************************************/
+.frt-section-works .frt-card{min-height:371px}
+.frt-nav-mobile-panel .frt-nav-mobile-panel__button{height:80px}
+
+
+/* • Fortunum LG */
+@media only screen and (min-width : 1280px) {
+	.frt-section-works .frt-card{min-height:456px}
+}
