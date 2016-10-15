@@ -249,7 +249,7 @@ header {
 }
 .slick-dots {
 	position: absolute;
-	bottom: 0px !important;
+	bottom: 0px;
 	display: block;
 	width: 100%;
 	padding: 0;
