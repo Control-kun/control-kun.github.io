@@ -71,3 +71,23 @@ $( document ).ready(function() {
 		]
 	});
 });
+
+
+window.frt = function () {
+	/**
+	 * (Раз)блокировать прокрутку <body>?
+	 * @param doYouWant (true / false) будет приведено к boolean
+	 * Можно добавить второй параметр, чтобы блокировать прокрутку в указанном элементе.
+	 * Можно добавить третий параметр, чтобы блокировать прокрутку строго (.dg-OH_i).
+	 */
+	function confirmLockScroll(doYouWant) {
+		if(doYouWant) document.body.classList.add('dg-OH'); else document.body.classList.remove('dg-OH');
+	}
+
+	var pNonDesktopNavMenuSwitch = document.getElementById('frt-nav-mobile-menu__switch');
+	// Вешаем событие на появление навигационного меню для нешироких экранов.
+	// Будем блокировать прокрутку <body>.
+	pNonDesktopNavMenuSwitch.addEventListener('change', function() {
+		confirmLockScroll(pNonDesktopNavMenuSwitch.checked);
+	});
+}();

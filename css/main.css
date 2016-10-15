@@ -140,7 +140,7 @@ header {
 	padding: 32px 0 0 105px;
 }
 .top-banner.cabinets {
-	background:url(../img/top-banner-cabinets-1280.png);
+	background:url(../img/top-banner-cabinets-1280.png); /* FIXME: этого файла нет? */
 	background-size: cover;
 }
 .cabinets .top-banner__text {
@@ -494,7 +494,7 @@ h6.dg-title.frt-title,.dg-title6.frt-title{font-size:1.07em;margin:2.33em 0}
 .frt-card{
 	position:relative;
 	border-radius:5px;
-	width:345px;
+	width:300px;
 	height:calc(100% - 20px);
 	background:#fff;
 	box-shadow:0 1px 0 0 #d3d3d3;
