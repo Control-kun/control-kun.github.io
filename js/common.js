@@ -34,7 +34,8 @@ $( document ).ready(function() {
 					centerMode: false,
 					centerPadding: '0px',
 					slidesToShow: 1,
-					infinite:true
+					infinite:true,
+					dots: false
 				}
 			},
 			{
@@ -44,7 +45,8 @@ $( document ).ready(function() {
 					centerMode: false,
 					centerPadding: '0px',
 					slidesToShow: 1,
-					infinite:true
+					infinite:true,
+					dots: false
 				}
 			},
 			{
@@ -66,6 +68,7 @@ $( document ).ready(function() {
 					centerPadding: '0px',
 					slidesToShow: 1,
 					infinite:true,
+					dots: false
 				}
 			}
 		]

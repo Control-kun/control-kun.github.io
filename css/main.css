@@ -67,13 +67,24 @@ body {
 	display: none;
 }
 header {
-	overflow:	hidden;
-	border: 1px solid rgb(201, 201, 201);
-	border-left: none;
-	border-right: none;
+	width: 100%;
+	height: 89px;
+	overflow: hidden;
 }
 /* RCM */
 /*HEADER*/
+.header-container {
+	overflow: hidden;
+	border: 1px solid rgb(201, 201, 201);
+	border-left: none;
+	border-right: none;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #f3f2f2;
+
+	z-index: 1000;
+}
 .header-logo {
 	height: 22px;
 	width: 122px;
