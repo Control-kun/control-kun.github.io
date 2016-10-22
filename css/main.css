@@ -74,6 +74,7 @@ header {
 /* RCM */
 /*HEADER*/
 .header-container {
+	height: 89px;
 	overflow: hidden;
 	border: 1px solid rgb(201, 201, 201);
 	border-left: none;
@@ -82,16 +83,15 @@ header {
 	top: 0;
 	width: 100%;
 	background-color: #f3f2f2;
-
 	z-index: 1000;
 }
 .header-logo {
-	height: 22px;
-	width: 122px;
-	margin:35px 0px 30px 11px;
+	height: 100%;
+	width: 200px;
 	float: left;
-	background: url(../img/header-logo.png) no-repeat;
-	background-size: cover;
+	background: url(../img/owner/fortunum-logo-transparent.png) no-repeat;
+	background-size: contain;
+	background-position: center;
 }
 .menu-container {
 	display: block;
@@ -249,6 +249,18 @@ header {
 	width:588px;
 	margin:0 auto;
 }
+.production-slider .slick-arrow {
+	opacity: 0;
+}
+.production-slider:hover {
+	cursor: pointer;
+}
+.production-slider:target {
+	cursor: progress;
+}
+.production-slider:hover .slick-arrow {
+	opacity: 1;
+}
 
 .slick-prev
 {
@@ -269,6 +281,15 @@ header {
 	text-align: center;
 	left:0;
 	right:0;
+}
+
+.project__slide__img {
+	width:1000px;
+	height:598px;
+}
+.project-slider {
+	width:1020px;
+	height:598px;
 }
 /*END PRICES*/
 /*CONTACTS*/
@@ -380,19 +401,22 @@ header {
 	overflow:hidden;
 	width:1110px;
 	margin:0 auto;
-	padding: 40px 20px 30px 20px;
+	padding: 40px 10px 30px 10px;
 
 	text-align: center;
 }
 .projects-item {
 	width:525px;
+	height:588px;
 	float: left;
-	margin-right:20px;
+	margin-right:10px;
+	margin-left:10px;
 	margin-top: 20px;
 	overflow: hidden;
 
 	border-radius: 5px;
 	box-shadow: 0px 1px 0px 0px #d3d3d3;
+	background-color: white;
 }
 .projects-item {
 	-webkit-transition-duration: .3s;
@@ -408,9 +432,6 @@ header {
 .projects-item:hover {
 	transform: translateY(-4px);
 	box-shadow: 0 20px 25px rgba(0,0,0,.15);
-}
-.projects-item:nth-child(2n) {
-	margin-right:0;
 }
 .projects-img {
 	height:337px;
@@ -431,7 +452,54 @@ header {
 	margin-top: 15px;
 	padding-bottom:50px;
 }
+.projects-item_missing {
+	margin-top:85px;
+}
 /*END PROJECTS PAGE*/
+
+/*PROJECT PAGE*/
+.project-text-description {
+	overflow: hidden;
+	width:1065px;
+	margin:0 auto;
+	color: #575757;
+
+	margin-top:100px;
+}
+
+.project-text-description p {
+	margin-top:14px;;
+}
+
+.project-text-description h3 {
+	color: #383839;
+}
+.project-text-special {
+	width:160px;
+	height:200px;
+	background-color: white;
+	float: left;
+
+	padding:40px 23px;
+	margin-right:30px;
+	margin-bottom: 40px;
+
+	font-family:"BebasBold";
+	font-size:20px;
+}
+.project-text-special p {
+	font-size:72px;
+	color: #1755bb;
+	margin-top: 25px;
+}
+.project-text-description__text {
+	margin-top: 14px;
+	font-size:24px;
+}
+.project-text-description__button-mobile {
+	display: none;
+}
+/*PROJECT PAGE*/
 /* RCM END */
 
 

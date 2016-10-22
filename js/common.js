@@ -10,7 +10,7 @@
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 
-});/**/
+});*/
 $( document ).ready(function() {
 	$('#production-slider,#instagramm-slider').slick({
 		centerMode: true,
@@ -82,10 +82,10 @@ $( document ).ready(function() {
 
 window.frt = function () {
 	/**
-	 * (Р Р°Р·)Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ РїСЂРѕРєСЂСѓС‚РєСѓ <body>?
-	 * @param doYouWant (true / false) Р±СѓРґРµС‚ РїСЂРёРІРµРґРµРЅРѕ Рє boolean
-	 * РњРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ РІС‚РѕСЂРѕР№ РїР°СЂР°РјРµС‚СЂ, С‡С‚РѕР±С‹ Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ РїСЂРѕРєСЂСѓС‚РєСѓ РІ СѓРєР°Р·Р°РЅРЅРѕРј СЌР»РµРјРµРЅС‚Рµ.
-	 * РњРѕР¶РЅРѕ РґРѕР±Р°РІРёС‚СЊ С‚СЂРµС‚РёР№ РїР°СЂР°РјРµС‚СЂ, С‡С‚РѕР±С‹ Р±Р»РѕРєРёСЂРѕРІР°С‚СЊ РїСЂРѕРєСЂСѓС‚РєСѓ СЃС‚СЂРѕРіРѕ (.dg-OH_i).
+	 * (Раз)блокировать прокрутку <body>?
+	 * @param doYouWant (true / false) будет приведено к boolean
+	 * Можно добавить второй параметр, чтобы блокировать прокрутку в указанном элементе.
+	 * Можно добавить третий параметр, чтобы блокировать прокрутку строго (.dg-OH_i).
 	 */
 	function confirmLockScroll(doYouWant) {
 		if(doYouWant) document.body.classList.add('dg-OH'); else document.body.classList.remove('dg-OH');
@@ -217,3 +217,4 @@ window.frt = function () {
 		});
 	}
 }();
+
