@@ -2,16 +2,16 @@
 <div class="production">
 	<div id="production-slider" class="production-slider">
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 	</div>
 </div>
@@ -20,16 +20,16 @@
 <div class="instagramm">
 	<div id="instagramm-slider" class="production-slider">
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 		<div class="production-slider__slide">
-			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>/img/slide-1-750.png" alt="">
+			<img class="production-slider__slide__img" src="<?=FRT_ROOT?>img/slide-1-750.png" alt="">
 		</div>
 	</div>
 </div>

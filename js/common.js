@@ -106,12 +106,12 @@ window.frt = function () {
 	var ajax = dg.$dev.AJAX;
 	ajax.set({
 		url: '/q/ajax.php',
-		request: 'JSONstr={"Mission:"form:phonecall","Data":"123"}',
+		request: 'JSONstr={"Mission":"form:phonecall","Data":"123"}',
 		callback: function () {
 			debugger;
 			console.log(arguments);
 		}
-	});
+	})();
 
 
 

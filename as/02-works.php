@@ -7,7 +7,7 @@
 						<article  class="frt-card">
 							<figure class="dg-img-box">
 								<a class="dg-link--wrap dg-100">
-									<img src="<?=FRT_ROOT?>/img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
+									<img src="<?=FRT_ROOT?>img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
 									<figcaption class="frt-figcaption">
 										<h3 class="dg-title frt-title">Кухни</h3>
 										<p class="frt-descr">Классические и современные кухни на заказ</p>
@@ -19,7 +19,7 @@
 						<article  class="frt-card">
 							<figure class="dg-img-box">
 								<a class="dg-link--wrap dg-100">
-									<img src="<?=FRT_ROOT?>/img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
+									<img src="<?=FRT_ROOT?>img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
 									<figcaption class="frt-figcaption">
 										<h3 class="dg-title frt-title">Кухни</h3>
 										<p class="frt-descr">Классические и современные<br>кухни на заказ<br><br>Количество текста не имеет значения. Высота соседних карточек автоматически подстраивается под максимальную.</p>
@@ -31,7 +31,7 @@
 						<article  class="frt-card">
 							<figure class="dg-img-box">
 								<a class="dg-link--wrap dg-100">
-									<img src="<?=FRT_ROOT?>/img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
+									<img src="<?=FRT_ROOT?>img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
 									<figcaption class="frt-figcaption">
 										<h3 class="dg-title frt-title">Кухни</h3>
 										<p class="frt-descr">Классические и современные кухни на заказ</p>
@@ -43,7 +43,7 @@
 						<article  class="frt-card">
 							<figure class="dg-img-box">
 								<a class="dg-link--wrap dg-100">
-									<img src="<?=FRT_ROOT?>/img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
+									<img src="<?=FRT_ROOT?>img/works/works-1.png" alt="Кухни. Классические и современные кухни на заказ." class="dg-img frt-img">
 									<figcaption class="frt-figcaption">
 										<h3 class="dg-title frt-title">Кухни</h3>
 										<p class="frt-descr">Классические и современные<br>кухни на заказ.<br><br><span style="color:#aaa">— Повыделывайся мне ещё!</span></p>

@@ -71,7 +71,7 @@
 				<input id="frt-nav-mobile-menu__switch" type="checkbox" hidden>
 				<div class="frt-nav-mobile-menu__box">
 					<a href="/" class="dg-link--wrap frt-nav-mobile-menu__logo">
-						<img class="dg-img dg-center-clamp" src="<?=FRT_ROOT?>/img/owner/fortunum-logo.png" alt="«Fortunum»: корпусная мебель на заказ в Санкт-Петербурге.">
+						<img class="dg-img dg-center-clamp" src="<?=FRT_ROOT?>img/owner/fortunum-logo.png" alt="«Fortunum»: корпусная мебель на заказ в Санкт-Петербурге.">
 					</a>
 					<ul class="frt-nav-mobile-menu dg-OxH dg-OyA">
 						<li class="dg-li">

@@ -1,5 +1,5 @@
 <?php
-define('FRT_ROOT', '');
+if (!defined('FRT_ROOT')) define('FRT_ROOT', '/');
 
 include '../00-HTML_A.php';
 

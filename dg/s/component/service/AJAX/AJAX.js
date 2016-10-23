@@ -20,7 +20,6 @@ window.dg.$dev.AJAX = function () {
 			_optCase,
 			_getCaseActual = function() {
 				var Case = Object.create(null);
-				debugger;
 				Case.url      = /*_optCase*/dgAJAX._url      || _optCaseDefault.url;
 				Case.request  = /*_optCase*/dgAJAX._request  || _optCaseDefault.request;
 				Case.method   = /*_optCase*/dgAJAX._method   || _optCaseDefault.method;
@@ -138,9 +137,7 @@ window.dg.$dev.AJAX = function () {
 		if ('async'    in Case) dgAJAX._async    = Case.async;
 		if ('notify'   in Case) dgAJAX._notify   = Case.notify;
 		if ('callback' in Case) dgAJAX._callback = Case.callback;
-		console.log('dgAJAX:');
-		console.dir(dgAJAX);
-		console.dir(this);
+		return this;
 	};
 
 	dgAJAX.get = function (Case) {

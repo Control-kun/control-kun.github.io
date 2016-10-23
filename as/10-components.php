@@ -55,6 +55,7 @@
 
 <?php
 include '02-works.php';
+include '02-works--card-for-carousel.php';
 include '11-components-by-RCM.php';
 include '12-components-modal-window.php';
 	
