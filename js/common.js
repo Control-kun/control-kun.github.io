@@ -73,6 +73,70 @@ $( document ).ready(function() {
 			}
 		]
 	});
+
+	$('#frt-carousel-works').slick({
+		centerMode: true,
+		dots:true,
+	//	centerPadding: '0px',
+	//	slidesToShow: 0, // На нуль делит, ишак.
+		infinite : false,
+		edgeFriction: true,
+		responsive: [
+			{
+				breakpoint: 768,
+				settings: {
+					arrows: true,
+					centerMode: true,
+					centerPadding: '0px',
+					slidesToShow: 1
+				}
+			},
+			{
+				breakpoint: 400,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 375,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 370,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true,
+					dots: false
+				}
+			},
+			{
+				breakpoint: 360,
+				settings: {
+					arrows: true,
+					centerMode: false,
+					centerPadding: '0px',
+					slidesToShow: 1,
+					infinite:true,
+					dots: false
+				}
+			}
+		]
+	});
 });
 
 
@@ -111,7 +175,7 @@ window.frt = function () {
 			debugger;
 			console.log(arguments);
 		}
-	})();
+	});//();
 
 
 
