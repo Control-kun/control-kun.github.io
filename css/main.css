@@ -252,7 +252,7 @@ header {
 .production-slider .slick-arrow {
 	opacity: 0;
 }
-.production-slider:hover {
+.slick-slide:hover {
 	cursor: pointer;
 }
 .production-slider:target {
@@ -491,6 +491,7 @@ header {
 	font-size:72px;
 	color: #1755bb;
 	margin-top: 25px;
+    display: inline-block;
 }
 .project-text-description__text {
 	margin-top: 14px;
@@ -498,6 +499,27 @@ header {
 }
 .project-text-description__button-mobile {
 	display: none;
+}
+.project-text-special_unit {
+    color: #b8b6b6;
+    font-size: 35px;
+}
+.blueprints-descr {
+    height:78px;
+    width:calc(100% - 20px);
+
+    margin:0 auto;
+    text-align: center;
+    display: block;
+    padding: 30px 0;
+
+    background-color: white;
+
+    font-family:"BebasBold";
+    font-size:24px;
+}
+#blueprints-slider .slick-slide {
+
 }
 /*PROJECT PAGE*/
 /* RCM END */

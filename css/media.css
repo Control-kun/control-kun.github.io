@@ -214,6 +214,9 @@
 		border: none;
 		box-shadow: 0px 1px 0px 0px #d3d3d3;
 	}
+    .blueprints-descr {
+        width:calc(100% - 12px);
+    }
 
 
 
@@ -374,6 +377,9 @@
 		width: 298px;
 		margin-bottom: 24px;
 	}
+    .blueprints-descr {
+        width:320px;
+    }
 }
 
 /* Custom, iPhone Retina */
@@ -410,16 +416,27 @@
 		padding:0px 0 29px 20px;
 
 	}
-	.project-text-special span {
+    .project-text-special_name {
 		display: block;
 		float: left;
 		margin-top:28px;
+        width:90px;
 	}
 	.project-text-special p {
 		float: left;
 		margin-top: 5px;
 		margin-left: 50px;
+        display: inline-block;
 	}
+    .project-text-special_unit {
+        margin-top: 36px;
+        width: auto;
+        display: inline-block;
+    }
+    .blueprints-descr {
+        width:320px;
+    }
+
 
 }
 

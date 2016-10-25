@@ -77,18 +77,29 @@ $( document ).ready(function() {
 	$('#frt-carousel-works').slick({
 		centerMode: true,
 		dots:true,
-	//	centerPadding: '0px',
-	//	slidesToShow: 0, // На нуль делит, ишак.
+		centerPadding: '0px',
+		slidesToShow: 1,
 		infinite : false,
 		edgeFriction: true,
 		responsive: [
+			{
+				breakpoint: 1920,
+				settings: {
+					arrows: true,
+					centerMode: true,
+					centerPadding: '0px',
+					slidesToShow: 1
+				}
+			},
 			{
 				breakpoint: 768,
 				settings: {
 					arrows: true,
 					centerMode: true,
 					centerPadding: '0px',
-					slidesToShow: 1
+					slidesToShow: 1,
+					infinite : true,
+					dots:false
 				}
 			},
 			{
