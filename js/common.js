@@ -12,7 +12,7 @@
 
 });*/
 $( document ).ready(function() {
-	$('#production-slider,#instagramm-slider').slick({
+	$('#production-slider,#instagramm-slider,#blueprints-slider,#fur-slider').slick({
 		centerMode: true,
 		dots:true,
 		centerPadding: '0px',
@@ -77,7 +77,7 @@ $( document ).ready(function() {
 	$('#frt-carousel-works').slick({
 		centerMode: true,
 		dots:true,
-		centerPadding: '0px',
+		centerPadding: '0',
 		slidesToShow: 1,
 		infinite : false,
 		edgeFriction: true,

@@ -450,8 +450,12 @@
 .frt-card{margin:10px auto}
 .frt-card.frt-card--fixed-size{margin:10px;width:300px;height:390px}
 
-#frt-carousel-works{position:relative}
-#frt-carousel-works .frt-carousel__slide{width:320px;height:410px}
+
+#frt-carousel-works.frt-carousel-works{margin-left:auto;margin-right:auto}
+#frt-carousel-works.frt-carousel-works,
+#frt-carousel-works .frt-carousel__slide{width:320px}
+#frt-carousel-works .frt-carousel__slide{height:410px;opacity:.5}
+#frt-carousel-works .frt-carousel__slide.slick-current{opacity:1}
 
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
@@ -462,7 +466,8 @@
 @media only screen and (min-width : 360px) {
 	.frt-card{width:345px}
 	.frt-card.frt-card--fixed-size{width:345px}
-	#frt-carousel-works .frt-carousel__slide{width:365px}
+	#frt-carousel-works.frt-carousel-works,
+	#frt-carousel-works.frt-carousel-works .frt-carousel__slide{width:365px}
 }
 
 /* Extra Small Devices, Phones */
@@ -480,7 +485,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	#frt-carousel-works .frt-carousel__slide{opacity:1}
 }
 
 /* Medium Devices, Desktops */
@@ -491,6 +496,7 @@
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
 	.frt-section-materials .dg-ww.frt-ww--cards{width:1100px}
+	#frt-carousel-works.frt-carousel-works{margin-left:100px}/*FIXME?*/
 }
 
 /* • Fortunum LG */

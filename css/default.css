@@ -38,6 +38,7 @@
 #dg-Workspace{overflow:auto}
 #dg-Workspace,.dg-P,.dg-PA,.dg-PC,.dg-PL,.dg-PR{position:absolute;top:0;left:0;right:0;bottom:0}
 .dg-PA{bottom:auto}.dg-PC{top:auto}.dg-PL{right:auto}.dg-PR{left:auto}
+.dg-P-fixed{position:fixed}.dg-P-relative{position:relative}
 
 
 /*#ABS-A,/*#ABS-B,* /#ABS-C,/*#ABS-Notify,* /#ABS-L,#ABS-R,/** /
