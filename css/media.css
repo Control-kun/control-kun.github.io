@@ -241,6 +241,23 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
+	.form-container {
+		width: 400px;
+		height: 600px;
+		margin:0 auto;
+		padding:40px;
+	}
+	.simple-form {
+		border-radius: 5px;
+		width: 320px;
+		height: 520px;
+		padding: 1px 12px;
+	}
+
+	.form-input {
+		width: 300px;
+
+	}
 
 }
 
@@ -380,6 +397,24 @@
     .blueprints-descr {
         width:320px;
     }
+	.form-container {
+		width: 320px;
+		height: 520px;
+		margin:0 auto;
+		padding:0px;
+	}
+	.simple-form {
+		border-radius: 5px;
+		width: 320px;
+		height: 520px;
+		padding: 1px 12px;
+		box-shadow: none;
+	}
+
+	.form-input {
+		width: 300px;
+
+	}
 }
 
 /* Custom, iPhone Retina */
