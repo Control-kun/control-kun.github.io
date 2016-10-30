@@ -522,42 +522,6 @@ header {
 
 }
 /*PROJECT PAGE*/
-.form-container {
-	width: 796px;
-	height: 662px;
-	margin:0 auto;
-	padding:70px;
-}
-.simple-form {
-	border-radius: 5px;
-	width: 656px;
-	height: 522px;
-	padding: 1px 45px;
-
-	background-color: white;
-	box-shadow: 0px 0px 70px 0px rgba(179, 179, 179, 1);
-}
-:root h2.dg-title.frt-title.form-title {
-	margin-top:63px;
-}
-
-.form-input {
-	width: 568px;
-	height: 72px;
-	margin: 0px 0 20px 0;
-	padding:0 32px;
-	display: block;
-
-	border: solid 1px rgb(242, 242, 242);
-
-	font-family: "BebasRegular";
-	font-size:24px;
-	text-transform: uppercase;
-}
-.form-input:focus {
-	outline: -webkit-focus-ring-color auto 0px;
-}
-
 /* RCM END */
 
 

@@ -152,9 +152,6 @@ $( document ).ready(function() {
 
 
 
-
-
-
 window.frt = function () {
 	/**
 	 * (Раз)блокировать прокрутку <body>?
@@ -292,4 +289,3 @@ window.frt = function () {
 		});
 	}
 }();
-

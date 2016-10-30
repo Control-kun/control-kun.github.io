@@ -29,6 +29,7 @@
 	<link rel="stylesheet" href="<?=FRT_ROOT?>css/slick-theme.css">
 	<link rel="stylesheet" href="<?=FRT_ROOT?>css/slick.css">
 	<link rel="stylesheet" href="<?=FRT_ROOT?>css/navmenumobile.css">
+	<link rel="stylesheet" href="<?=FRT_ROOT?>dg/s/component/control/SupraWorkspace/SupraWorkspace.css">
 
 <!--<script src="<?=FRT_ROOT?>libs/modernizr/modernizr.js"></script>-->
 
