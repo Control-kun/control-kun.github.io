@@ -12,6 +12,7 @@
 	<script src="<!?=FRT_ROOT?!>libs/plugins-scroll/plugins-scroll.js"></script>
 */ ?>
 <!--<script src="--><?//=FRT_ROOT?><!--/dg/s/component/service/Log/Log.js"></script>-->
+	<script src="<?=FRT_ROOT?>dg/s/component/control/SupraWorkspace/SupraWorkspace.js"></script>
 	<script src="<?=FRT_ROOT?>dg/s/component/service/AJAX/AJAX.js"></script>
 	<script src="<?=FRT_ROOT?>js/slick.min.js"></script>
 	<script src="<?=FRT_ROOT?>js/common.js"></script>

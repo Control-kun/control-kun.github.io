@@ -25,8 +25,9 @@
 
 	<div class="project-text-description">
 		<div class="project-text-special">
-			<span>Вместимость<br>плечиков:</span>
+			<span class="project-text-special_name">Вместимость<br>плечиков:</span>
 			<p>150</p>
+			<span class="project-text-special_unit">п.</span>
 		</div>
 		<h3>Белоснежный шкаф</h3>
 		<p class="project-text-description__text">

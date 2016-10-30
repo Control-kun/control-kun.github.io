@@ -1,0 +1,291 @@
+/* Версия 151102 — MHG + SыR
+→ отделение оформления, z-index и transitions
+*/
+
+
+/* МОДАЛЬНОЕ ОКНО
+================================================================================ */
+.dg-SW_lock{overflow:hidden}/* убираем скроллбары с основного содержимого страницы */
+#dg-SW_background{
+	overflow:auto;
+	-webkit-overflow-scrolling: touch;/* однопальцевый скролл для iPad*/
+}
+	#dg-SW_background>*{-webkit-transform:translateZ(0px)}/* фикс для странностей в iPad */
+
+	.dg-SupraWorkspace{font-size:10px;
+		/*position:absolute;*/
+		position:relative;
+		/*overflow-x:hidden;overflow-y:auto;*/
+	}
+
+		.dg-SupraWorkspace .dg-SW__close{font-size:1.5em;
+			cursor:pointer;
+			position:absolute;top:.5em;right:.5em; /*(32+16-20-12) / 2*/
+			font-family:Arial,sans-serif;line-height:1.2em;text-align:center;font-weight:normal;
+		}
+
+		.dg-SupraWorkspace .dg-SW__A,
+		.dg-SupraWorkspace .dg-SW_title{font-size:2.5em;
+			position:relative;
+			padding:.3em 2em;
+			text-align:center;line-height:1em;text-transform:uppercase;text-align:center;
+		}
+		.dg-SupraWorkspace .dg-SW__B,
+		.dg-SupraWorkspace .dg-SW_etiam{font-size:2em;position:relative;padding:1em;max-height:30em}
+			.dg-SupraWorkspace .dg-SW__B .dg-SW_etiam-ABS,/* TODO? */
+			.dg-SupraWorkspace .dg-SW_etiam .dg-SW_etiam-ABS{position:absolute;left:3em;right:3em;top:0;bottom:0}
+
+		.dg-SupraWorkspace .dg-SW__C,
+		.dg-SupraWorkspace .dg-SW_panel{font-size:2em;padding:.5em 0;width:100%;text-align:center;line-height:1em}
+
+
+
+.dg-SW-show{opacity:1}.dg-SW-hide{opacity:0}
+
+.dg-SW-show .dg-SupraWorkspace{display:block}
+.dg-SW-hide .dg-SupraWorkspace{display:none}
+/* ↑↑↑ МОДАЛЬНОЕ ОКНО
+================================================================================ */
+
+
+
+/* КНОПКИ и их цвета по умолчанию
+================================================================================ */
+.dg-SupraWorkspace .dg-SW__button{font-size:1em;display:inline-block;margin:0 .25em;padding:.1em 1em;min-width:4.5em;min-height:1.5em;width:auto;height:auto;line-height:1.5em}
+/* Обычная кнопка */
+.dg-SupraWorkspace .dg-SW__button{border:2px solid rgba(0,0,0,.2);border-radius:.4em;background-color:#CCC;color:#424242}
+.dg-SupraWorkspace .dg-SW__button:hover{background-color:#DDD}
+.dg-SupraWorkspace .dg-SW__button:active{background-color:#EEE}
+
+
+/* Отмена */
+.dg-SupraWorkspace .dg-SW__button.dg-SW__button--cansel{background:rgba(187,51,51,.7);color:#FFCC66}
+.dg-SupraWorkspace .dg-SW__button.dg-SW__button--cansel:hover {background:rgba(187,51,51,1)}
+.dg-SupraWorkspace .dg-SW__button.dg-SW__button--cansel:active{background:rgba(187,51,51,.3); }
+.dg-SupraWorkspace .dg-SW__button.dg-SW__button--cansel:hover {border-color:rgba(187,51,51,.2)}
+.dg-SupraWorkspace .dg-SW__button.dg-SW__button--cansel:active{border-color:rgba(187,51,51,.5)}
+
+
+/* Отмена */
+.dg-SupraWorkspace .dg-SW__button.dg-SW_button--VK{background-color:#597DA3;color:#DDD}
+.dg-SupraWorkspace .dg-SW__button.dg-SW_button--VK:hover{background-color:#587A9E}
+.dg-SupraWorkspace .dg-SW__button.dg-SW_button--VK:active{background-color:#385A7E}
+/* ↑↑↑ КНОПКИ и их цвета по умолчанию
+================================================================================ */
+
+
+
+/* z-index, transition
+================================================================================ */
+#dg-SW_background{z-index:19}
+.dg-SupraWorkspace{z-index:20}
+#dg-SW_background.dg-SW-hide{z-index:0}
+
+.dg-SW-show,.dg-SW-hide{transition:all .3s cubic-bezier(0.38,0.72,0.79,1.43)}
+/* ↑↑↑ z-index, transition
+================================================================================ */
+
+
+
+/* ОФОРМЛЕНИЕ
+//////////////////////////////////////////////////////////////////////////////// */
+
+/* МОДАЛЬНОЕ ОКНО
+================================================================================ */
+#dg-SW_background.exe-technology-000{
+	background:rgba(0,0,0,.8);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000); /* IE6–IE8 */
+	zoom:1;
+}
+#dg-SW_background.exe-technology-fff{background:rgba(255,255,255,.8)}
+
+
+
+
+
+
+/* derfex :: 151102 */
+/* old ~ 25/17? *//*
+.dg-SupraWorkspace .dg-SW_title{
+	background:#8E2709;background:#851E00;
+	color:#DA4;
+}
+.dg-SupraWorkspace .dg-SW_panel{background:#8E2709;background:#851E00}
+*/
+	/* vz (dg) */
+	.dg-SupraWorkspace .dg-SW_etiam{box-shadow:inset 0 0 2px 1px rgba(36,36,36,.5)}
+	/* dg-white */
+	.dg-SupraWorkspace .dg-SW_title,.dg-SupraWorkspace .dg-SW_panel{background:#FFF;color:#000}
+
+	/* mhg */
+	.dg-SupraWorkspace .dg-SW_title{color:#CB8933}
+	.dg-SupraWorkspace .dg-SW_title,.dg-SupraWorkspace .dg-SW_panel{background:#382F32}
+/* ↑↑↑ МОДАЛЬНОЕ ОКНО
+================================================================================ */
+
+
+
+
+
+
+/* ↑↑↑ ОФОРМЛЕНИЕ
+//////////////////////////////////////////////////////////////////////////////// */
+
+
+
+/* Control творческие потуги
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.dg-SupraWorkspace .dg-SW_etiam .exe-SW_textarea_block {
+	height: 6em;
+}
+
+.dg-SupraWorkspace .dg-SW_etiam .exe-SW_textarea {
+	position: absolute;
+	display: block;
+	background: #fff;
+	left: 0.5em; top: 0.5em; 
+	width: calc(100% - 7em - 7px);
+	max-width: calc(100% - 1em - 7px);
+	min-width: calc(100% - 1em - 7px);
+
+	font-family: Open_Sans_Condensed_Light,"Arial Narrow",sans-serif;
+	font-size: 1em;
+	color: rgba(142, 39, 9, 0.8);
+}
+
+
+
+/* derfex's творческие потуги
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.dg-SupraWorkspace .dg-SW_etiam table { display: table; margin: 0 auto; }
+	.dg-SupraWorkspace .dg-SW_etiam table td { padding: 0.3em 1em; }
+
+	.dg-SupraWorkspace .dg-SW_etiam table td.exe-taR { text-align: right; }
+	
+	.dg-SupraWorkspace .dg-SW_etiam table a { color: inherit; border-bottom: 1px dotted; }
+
+
+
+
+
+
+
+
+
+
+
+
+/* МОДАЛЬНОЕ ОКНО :: Модификации
+================================================================================ */
+
+/* По умолчанию
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.dg-SupraWorkspace[data-dg-sw="default"]{
+	min-width:50em;max-width:50em;
+	max-height:30em;
+	left:calc(50% - 50em / 2);
+	top: calc(50% - 30em / 2);
+}
+#dg-SW_background.exe-technology-fff .dg-SupraWorkspace[data-dg-sw="default"]{
+	background-color:#DDD;
+	/*border:.5em solid #415F80;*/
+	color:#333;
+}
+
+.dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close{
+	border: 0.3em solid rgba(255,255,255,.5); /* ~ rgba(36,36,36, 0.5);*/
+	border: 0.3em solid rgba(221,170, 68,.5);
+	border: 0.3em solid rgba(0,0,0,.5); /* derfex- */
+	border-radius: 30%;
+	width:1.2em;height:1.2em;
+	color:#FFF;
+
+	/* derfex 150912 */
+	color:#000;
+}
+	.dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close:hover, .dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close:focus, .dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close:active { border: 0.3em solid rgba(221,170, 68, 0.5); /* derfex 150912: */color:#FFF}
+	.dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close:hover, .dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close:focus { background-color: #DD3333; }
+	.dg-SupraWorkspace[data-dg-sw="default"] .dg-SW__close:active { background-color: #FFCC66; }
+
+
+/* Фортунум: форма заказа звонка
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+#dg-SW_background.dg-SW-hide{display:none}
+.dg-SupraWorkspace[data-dg-sw="request-phone-call"]{
+	margin:auto;
+	background:none;
+	/*min-width:50em;max-width:100%;*/
+}
+.dg-SupraWorkspace[data-dg-sw="request-phone-call"] .dg-SW__close{font-size:10em;
+	top:-0.1em;right:.1em;
+	font-family:initial;line-height:inherit;color:#a6a6a6
+}
+.dg-SupraWorkspace[data-dg-sw="request-phone-call"] .dg-SW__close:hover{color:#999}
+.dg-SupraWorkspace[data-dg-sw="request-phone-call"] .dg-SW__close:active{color:#666}
+
+
+.frt-form/*.frt-form--simple*/{font-size:2.4em;
+	border-radius:5px;padding:24px 12px;
+	width:320px;height:522px;
+	background-color:#fff
+}
+/*:root .frt-form h2.dg-title.frt-title{margin-top:64px}*/
+
+.frt-input{
+	display:block;
+	margin:20px 0;border:solid 1px #f2f2f2;padding:0 32px;
+	width:100%;height:72px;
+}
+.frt-input:focus {
+	outline: -webkit-focus-ring-color auto 0px;/* TODO: это что?! */
+}
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* • Fortunum SM */
+@media only screen and (min-width : 360px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* • Fortunum MD */
+@media only screen and (min-width : 750px) {
+	.frt-form-container{margin:40px}
+	.frt-form/*.frt-form--simple*/{padding-left:45px;padding-right:45px;width:656px;box-shadow:0 0 70px 0 #b3b3b3}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	.frt-form-container{margin:70px}
+}
+
+/* • Fortunum LG */
+@media only screen and (min-width : 1280px) {
+
+}
+
+
+
+
+
+/* ↑↑↑ МОДАЛЬНОЕ ОКНО :: Модификации
+================================================================================ */
