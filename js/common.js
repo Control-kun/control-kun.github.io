@@ -175,15 +175,31 @@ window.frt = function () {
 
 
 	// AJAX: отправка данных формы обратного звонка
-	var ajax = dg.$dev.AJAX;
-	ajax.set({
+	var formRPC = { // request phone call
+		pName:   document.getElementById('user-name'),
+		pPhone:  document.getElementById('user-phone'),
+		pSubmit: document.getElementById('submit')
+	};
+	formRPC.getData = function () {
+		return JSON.stringify({
+			name:  formRPC.pName.value,
+			phone: formRPC.pPhone.value
+		});
+	};
+	formRPC.AJAX = dg.$dev.AJAX;
+	formRPC.AJAX.set({
 		url: '/q/ajax.php',
-		request: 'JSONstr={"Mission":"form:phonecall","Data":"123"}',
 		callback: function () {
 			debugger;
 			console.log(arguments);
 		}
-	});//();
+	});
+	formRPC.sendData = function () {
+		console.log('this for sendData():', this);
+		formRPC.AJAX.set({request: 'JSONstr={"Mission":"form:phonecall","Data":' + formRPC.getData() + '}'})();
+		return false;
+	};
+	formRPC.pSubmit.addEventListener('click', formRPC.sendData);
 
 
 

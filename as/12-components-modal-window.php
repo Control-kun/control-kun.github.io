@@ -19,13 +19,14 @@
 		<div class="dg-SW__close dg-unselectable" data-dg-jsaction="hide:SW">×</div>
 
 		<section class="frt-form-container">
-			<form action="" class="frt-form dg-fixMC">
+			<!--<form action="" class="frt-form dg-fixMC">-->
+			<form class="frt-form dg-fixMC">
 				<h2 class="dg-title frt-title">Заказать <span class="frt-title__underline">звонок</span></h2>
 				<p class="frt-text dg-TAC">Мы гарантируем конфиденциальность Ваших данных</p>
-				<input class="dg-input frt-input" type="text" placeholder="Ваше имя">
-				<input class="dg-input frt-input" type="text" placeholder="Ваш телефон">
+				<input id="user-name"  class="dg-input frt-input" type="text" placeholder="Ваше имя">
+				<input id="user-phone" class="dg-input frt-input" type="text" placeholder="Ваш телефон">
 				<div class="dg-TAC">
-					<button class="dg-button frt-button">Отправить</button>
+					<button id="submit" class="dg-button frt-button">Отправить</button>
 				</div>
 			</form>
 		</section>
