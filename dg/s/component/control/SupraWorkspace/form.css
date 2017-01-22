@@ -1,0 +1,62 @@
+/* Фортунум: форма заказа звонка
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+.frt-form/*.frt-form--simple*/{font-size:2.4em;
+  border-radius:5px;padding:24px 12px;
+  min-width:320px;max-width:656px;height:522px;
+  background-color:#fff
+}
+/*:root .frt-form h2.dg-title.frt-title{margin-top:64px}*/
+
+.frt-input{
+  display:block;
+  margin:20px 0;border:solid 1px #f2f2f2;padding:0 32px;
+  width:100%;height:72px;
+}
+.frt-input:focus {
+  outline: -webkit-focus-ring-color auto 0/* Чтобы в Chrome при фокусе не появлялась обводка; outline:none / 0 не помог? */
+}
+
+
+.frt-form{border:1px solid #ddd}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* • Fortunum SM */
+@media only screen and (min-width : 360px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* • Fortunum MD */
+@media only screen and (min-width : 750px) {
+  .frt-form-container{margin:40px}
+  .frt-form/*.frt-form--simple*/{padding-left:45px;padding-right:45px;width:656px;border:0;box-shadow:0 0 70px 0 #b3b3b3}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .frt-form-container{margin:70px}
+}
+
+/* • Fortunum LG */
+@media only screen and (min-width : 1280px) {
+
+}

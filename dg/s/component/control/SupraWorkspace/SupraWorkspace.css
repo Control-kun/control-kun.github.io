@@ -1,11 +1,11 @@
 /* Версия 151102 — MHG + SыR
 → отделение оформления, z-index и transitions
 */
-
+@import 'form.css'; /* TODO: перенести */
 
 /* МОДАЛЬНОЕ ОКНО
 ================================================================================ */
-.dg-SW_lock{overflow:hidden}/* убираем скроллбары с основного содержимого страницы */
+.dg-SW_lock{overflow:hidden}/* убираем скроллбары с основного содержимого страницы *//* TODO: есть .dg-OH */
 #dg-SW_background{
 	overflow:auto;
 	-webkit-overflow-scrolling: touch;/* однопальцевый скролл для iPad*/
@@ -222,66 +222,6 @@
 }
 .dg-SupraWorkspace[data-dg-sw="request-phone-call"] .dg-SW__close:hover{color:#999}
 .dg-SupraWorkspace[data-dg-sw="request-phone-call"] .dg-SW__close:active{color:#666}
-
-
-.frt-form/*.frt-form--simple*/{font-size:2.4em;
-	border-radius:5px;padding:24px 12px;
-	width:320px;height:522px;
-	background-color:#fff
-}
-/*:root .frt-form h2.dg-title.frt-title{margin-top:64px}*/
-
-.frt-input{
-	display:block;
-	margin:20px 0;border:solid 1px #f2f2f2;padding:0 32px;
-	width:100%;height:72px;
-}
-.frt-input:focus {
-	outline: -webkit-focus-ring-color auto 0px;/* TODO: это что?! */
-}
-
-
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* • Fortunum SM */
-@media only screen and (min-width : 360px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* • Fortunum MD */
-@media only screen and (min-width : 750px) {
-	.frt-form-container{margin:40px}
-	.frt-form/*.frt-form--simple*/{padding-left:45px;padding-right:45px;width:656px;box-shadow:0 0 70px 0 #b3b3b3}
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-	.frt-form-container{margin:70px}
-}
-
-/* • Fortunum LG */
-@media only screen and (min-width : 1280px) {
-
-}
 
 
 

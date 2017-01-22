@@ -16,9 +16,8 @@
 	</div>
 
 	<div class="dg-SupraWorkspace" data-dg-sw="request-phone-call">
-		<div class="dg-SW__close dg-unselectable" data-dg-jsaction="hide:SW">×</div>
-
-		<section class="frt-form-container">
+		<section class="frt-form-container dg-P-relative">
+			<div class="dg-SW__close dg-unselectable" data-dg-jsaction="hide:SW">×</div>
 			<!--<form action="" class="frt-form dg-fixMC">-->
 			<form class="frt-form dg-fixMC">
 				<h2 class="dg-title frt-title">Заказать <span class="frt-title__underline">звонок</span></h2>

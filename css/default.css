@@ -31,10 +31,11 @@
 
 /* DGTZ / Основы
 //////////////////////////////////////////////////////////////////////////////////////////////////// */
+#dg-Arcem,.dg-initFS{font-size:10px}
 /* 151121 */#dg-Arcem{position:relative;overflow-y:auto;width:100%}
 
 /*#dg-Arcem{min-height:100%;height:auto!important;height:100%}*/#dg-Arcem{min-height:100%;height:100%}
-#dg-Arcem{position:relative;overflow:hidden;font-size:10px}
+#dg-Arcem{position:relative;overflow:hidden}
 #dg-Workspace{overflow:auto}
 #dg-Workspace,.dg-P,.dg-PA,.dg-PC,.dg-PL,.dg-PR{position:absolute;top:0;left:0;right:0;bottom:0}
 .dg-PA{bottom:auto}.dg-PC{top:auto}.dg-PL{right:auto}.dg-PR{left:auto}
@@ -278,7 +279,7 @@ h6.dg-title,.dg-title.dg-title6{font-size:.67em;margin:2.33em 0}/* derfex? :: у
 
 
 
-.dg-input,.dg-textarea{font:inherit}
+.dg-input,.dg-textarea{font:inherit;font-size:1em}
 
 
 
