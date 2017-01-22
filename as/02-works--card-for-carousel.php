@@ -38,7 +38,7 @@ FRT_CARD_WORK;
 
 
 
-<section class="frt-section-carousel-works">
+<section class="frt-section-carousel-works dg-P-relative">
 	<h2 class="dg-title frt-title">Другие <span class="frt-title__underline">проекты</span></h2>
 	<div id="frt-carousel-works" class="frt-carousel">
 		<div class="frt-carousel__slide">
