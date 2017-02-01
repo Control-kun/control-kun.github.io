@@ -33,7 +33,6 @@ $dgOutputBuffer = 'has been cleared'; // FIXME: derfex-
 // Сборка массива, преобразование в JSON, вывод.
 ////////////////////////////////////////////////////////////////////////////////
 $JSONstr = array('Data'=>$dgData,'Notify'=>$dgTKIT->getNotify(),'OB'=>$dgOutputBuffer);
-//$JSONstr = array('Data'=>$Data,'Notify'=>$Notify);
 //if ($UserRight===-1) $JSONstr['OB']=$OutputBuffer; // derfex? :: права для отладки
 $JSONstr = json_encode($JSONstr);
-echo $JSONstr;
+echo '|§§§|', $JSONstr, '|§§§|';

@@ -233,14 +233,14 @@ function dgPP_interpretation($P = '', $X = 0, $D = '', $ext = 'php') // derfex? 
 
 
 
-//	PP (prepare path)
-//
-//	$P = '' — path,
-//	$X = 0  — exertus (project, region),
-//	$D = '' — datetime,
-//	$ext = 'php' — extension
-//
-//	@result (str) — путь к подключаемому файлу.
+/**
+ * PP (prepare path)
+ * @param string $P   — path,
+ * @param string $X   — exertus (project, region),
+ * @param string $D   — datetime,
+ * @param string $ext — extension
+ * @return string — путь к подключаемому файлу.
+ */
 function PP($P = '', $X = 0, $D = '', $ext = 'php')
 {
 	// 0. Проверка входящих параметров:
@@ -250,7 +250,9 @@ function PP($P = '', $X = 0, $D = '', $ext = 'php')
 		'mhg'=>1,'mhg-adm'=>1,'mhg-ajax'=>1,
 		'vz'=>1,
 		'zabagro'=>1,'zabagro-adm'=>1,'zabagro-ajax'=>1,
-		'zm'=>1,'zm-gtn'=>1,'zm-pick'=>1
+		'zm'=>1,'zm-gtn'=>1,'zm-pick'=>1,
+
+		'frt-ajax'=>1
 	];
 	if ($P == '' or !isset($allowX[$X])) { // derfex+ :: возможность не проверять
 		trigger_error('ww ::: Неверные параметры: P=\'' . $P . '\', X=' . $X . ', D=' . ($D<>'' ? $D : "''") . ', extension=' . $ext . '.');

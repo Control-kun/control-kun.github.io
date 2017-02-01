@@ -48,7 +48,7 @@ if ($jsJSONstr) {
         if($JSONdata['Mission']==$k_Missions) {
             $MissionAllowed=TRUE;
 //			echo 'Миссия началась.<br>';
-            include PP($v_Missions,$dgProject);
+            include PP($v_Missions, $dgProject);
             //dgVDump($k);
             //dgVDump($v);
             //	$JSONdata[$replKeys[$k]] = $v;
