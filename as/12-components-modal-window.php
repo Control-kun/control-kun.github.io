@@ -2,7 +2,7 @@
 <section>
 	<div class="dg-w">
 		<div class="dg-ww">
-			<button class="dg-button frt-button" data-dg-jsaction="show:SW_RPC">Пыщь!</button>
+			<button class="dg-button frt-button" data-dg-jsaction="show:SW_RPC">Открыть диалог с формой</button>
 		</div>
 	</div>
 </section>
