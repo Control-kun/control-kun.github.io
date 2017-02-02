@@ -69,6 +69,7 @@ $dgTKIT = new dgToKeepInTouchService($dgDirect[$dgProjectDirectKey]['TKIT']);
 ////	// Настройка подключения к базе данных
 ////	mysql_query('SET names "utf8"');
 ////	}
+// FIXME: повтор
 if (!headers_sent()) {
 	// Вывод заголовка с данными о кодировке страницы
 	header('Content-Type: text/html; charset=utf-8');
@@ -80,7 +81,7 @@ if (!headers_sent()) {
 
 // Исследование текущего адреса. Перенаправление на внутренние страницы при необходимости.
 // ...
-require PP('_fn');
+//require PP('_fn'); // TODO?
 //require PP('_services/dgParseURIService');
 
 

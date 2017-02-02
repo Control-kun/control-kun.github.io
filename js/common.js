@@ -160,7 +160,7 @@ window.frt = function () {
 	 * Можно добавить третий параметр, чтобы блокировать прокрутку строго (.dg-OH_i).
 	 */
 	function confirmLockScroll(doYouWant) {
-		if(doYouWant) document.body.classList.add('dg-OH'); else document.body.classList.remove('dg-OH');
+		if (doYouWant) document.body.classList.add('dg-OH'); else document.body.classList.remove('dg-OH');
 	}
 
 	var pNonDesktopNavMenuSwitch = document.getElementById('frt-nav-mobile-menu__switch');
@@ -176,52 +176,62 @@ window.frt = function () {
 
 	// AJAX: отправка данных формы обратного звонка
 	var formRPC = { // request phone call
-		pName:   document.getElementById('user-name'),
-		pPhone:  document.getElementById('user-phone'),
+		pSW_RPC: pSW_RPC,
+		pName: document.getElementById('user-name'),
+		pPhone: document.getElementById('user-phone'),
 		pSubmit: document.getElementById('submit')
 	};
-	formRPC.getData = function () {
-		return JSON.stringify({
-			name:  formRPC.pName.value,
-			phone: formRPC.pPhone.value
+	if (formRPC.pSW_RPC) {
+		formRPC.getData = function () {
+			// TODO: Собрать данные со всех полей.
+			// TODO: Указать ключи по атрибуту `data-dg-request-field-name` (?) или `name`.
+			// TODO: Учесть игнорирование полей, помеченных специальным CSS-классом или атрибутом.
+			return JSON.stringify({
+				name:  formRPC.pName.value,
+				phone: formRPC.pPhone.value
+			});
+		};
+		formRPC.AJAX = dg.$dev.AJAX;
+		formRPC.AJAX.set({
+			url: '/q/ajax.php',
+			callback: function () {
+				debugger;
+				console.log(arguments);
+				return false;
+			}
 		});
-	};
-	formRPC.AJAX = dg.$dev.AJAX;
-	formRPC.AJAX.set({
-		url: '/q/ajax.php',
-		callback: function () {
-			debugger;
-			console.log(arguments);
-		}
-	});
-	formRPC.sendData = function () {
-		console.log('this for sendData():', this);
-		formRPC.AJAX.set({request: 'JSONstr={"Mission":"form:phonecall","Data":' + formRPC.getData() + '}'})();
-		return false;
-	};
-	formRPC.pSubmit.addEventListener('click', formRPC.sendData);
-
+		formRPC.sendData = function () {
+			console.log('this for sendData():', this);
+			formRPC.AJAX.set({request: 'JSONstr={"Mission":"form:phonecall","Data":' + formRPC.getData() + '}'})();
+			return false;
+		};
+		// formRPC.pSubmit.addEventListener('click', function(){ return formRPC.sendData(); });
+		// formRPC.pSubmit.onclick = function(){ return formRPC.sendData(); };
+		formRPC.pSW_RPC.addEventListener('submit', function (event) {
+			event.preventDefault();
+			formRPC.sendData();
+		});
+	}
 
 
 	// Фильтр для товаров (проектов):
 	var pSectionProducts = document.getElementById('frt-section-products');
 	if (pSectionProducts) {
-		var
-				classNameForCurrentSwitch = 'frt-button--switch-current',
-				pSwitchShowAll = pSectionProducts.getElementsByClassName(classNameForCurrentSwitch)[0], // FIXME?: хе-хе
-				ppProducts = Array.prototype.slice.call(
-						pSectionProducts.querySelectorAll('.projects-container .projects-item[data-frt-subcategory]')
-				),
-				infoFilterOfProducts = {
-					COUNT_OUTPUT: 1,
-					COUNT_UNLIMITED: true,
-					currentKind: true,
-					tabs: {
-						pp: Array.prototype.slice.call(pSectionProducts.querySelectorAll('[data-frt-action]')),
-						current: pSwitchShowAll
-					},
-					items: []
-				};
+		var classNameForCurrentSwitch = 'frt-button--switch-current';
+		var pSwitchShowAll = pSectionProducts.getElementsByClassName(classNameForCurrentSwitch)[0]; // FIXME?: хе-хе
+		var ppProducts = Array.prototype.slice.call(
+			pSectionProducts.querySelectorAll('.projects-container .projects-item[data-frt-subcategory]')
+		);
+		var infoFilterOfProducts = {
+			COUNT_OUTPUT: 1,
+			COUNT_UNLIMITED: true,
+			currentKind: true,
+			tabs: {
+				pp: Array.prototype.slice.call(pSectionProducts.querySelectorAll('[data-frt-action]')),
+				current: pSwitchShowAll
+			},
+			items: []
+		};
 		console.log(infoFilterOfProducts.tabs.current);
 
 		// Если товаров много, то будем скрывать часть.
@@ -249,9 +259,8 @@ window.frt = function () {
 		}
 
 		ppProducts.forEach(function(item, i, arr) {
-			var
-					kind = item.getAttribute('data-frt-subcategory'),
-					isShow = i < infoFilterOfProducts.COUNT_OUTPUT;
+			var kind = item.getAttribute('data-frt-subcategory');
+			var isShow = i < infoFilterOfProducts.COUNT_OUTPUT;
 			if(!isShow) {
 				item.style.display = 'none';
 			}

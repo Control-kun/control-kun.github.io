@@ -17,6 +17,8 @@ function dgDebugCSS(){ ?>
 		[data-dg-debug="string"] p{margin:0;padding:0}
 
 		[data-dg-debug] input[type="checkbox"] + div{max-height:0;display:block;height:30em;overflow:auto;background:#eee}
+		[data-dg-debug] input[type="checkbox"] + div{white-space:pre}<?// всегда ли? ?>
+
 		[data-dg-debug] input[type="checkbox"]:checked + div{max-height:30em}
 
 		.dg-DataIntoTable{border-collapse:collapse;border-spacing:0}

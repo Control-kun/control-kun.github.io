@@ -15,6 +15,7 @@
 //echo '<hr>' . $_SERVER['DOCUMENT_ROOT'] . '<hr>'; exit();
 //define('DG_J_PRJ_DEMAND', '/mahagon'); // требование совместимости // '/projects/mahagon'
 define('DG_J_PRJ_DEMAND', ''); // требование совместимости // '/derfex-projects/dgtz/demo.dgtz.ru/'
+//define('DG_J_PRJ_DEMAND', '/local/templates/fortunum/'); // требование совместимости // '/derfex-projects/dgtz/demo.dgtz.ru/'
 define('DG_J_PRJ_ENGINE', '/dg'); // папка dgEngine
 
 
@@ -32,6 +33,7 @@ define('DG_NAV_ROOT',                               DG_J_PRJ_DEMAND             
 
 // Массив распределяющих параметров
 ////////////////////////////////////////////////////////////////////////////////
+// TODO: Внимание! Требуется править массив в функции PP() (0.php). Реализовать обход на глобальной переменной или константе-массиве (PHP7).
 // derfex- :: demo.dgtz.ru
 $dgDirect = array(
 	'q' => array(
