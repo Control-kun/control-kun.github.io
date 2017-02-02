@@ -8,26 +8,28 @@ window.dg.$dev.AJAX = function () {
 	// FIXME
 	// var dgLog = dg.$service.Log;
 
-	var
-			_optCaseDefault = {
-				url:      null,
-				request:  null,
-				method:  'POST',
-				async:    true,
-				notify:   true,
-				callback: null
-			},
-			_optCase,
-			_getCaseActual = function() {
-				var Case = Object.create(null);
-				Case.url      = /*_optCase*/dgAJAX._url      || _optCaseDefault.url;
-				Case.request  = /*_optCase*/dgAJAX._request  || _optCaseDefault.request;
-				Case.method   = /*_optCase*/dgAJAX._method   || _optCaseDefault.method;
-				Case.async    = /*_optCase*/dgAJAX._async    || _optCaseDefault.async;
-				Case.notify   = /*_optCase*/dgAJAX._notify   || _optCaseDefault.notify;
-				Case.callback = /*_optCase*/dgAJAX._callback || _optCaseDefault.callback;
-				return Case;
-			};
+	// При отладке отделяем хлам от данных следующей строкой:
+	var _SEPARATOR_ON_ERROR_PARSE_RESPONSE = '|§§§|';
+
+	var _optCaseDefault = {
+		url:      null,
+		request:  null,
+		method:  'POST',
+		async:    true,
+		notify:   true,
+		callback: null
+	};
+	var _optCase;
+	var _getCaseActual = function() {
+		var Case = Object.create(null);
+		Case.url      = /*_optCase*/dgAJAX._url      || _optCaseDefault.url;
+		Case.request  = /*_optCase*/dgAJAX._request  || _optCaseDefault.request;
+		Case.method   = /*_optCase*/dgAJAX._method   || _optCaseDefault.method;
+		Case.async    = /*_optCase*/dgAJAX._async    || _optCaseDefault.async;
+		Case.notify   = /*_optCase*/dgAJAX._notify   || _optCaseDefault.notify;
+		Case.callback = /*_optCase*/dgAJAX._callback || _optCaseDefault.callback;
+		return Case;
+	};
 
 
 	/**
@@ -39,19 +41,29 @@ window.dg.$dev.AJAX = function () {
 	 * @return {array/object} true / false.
 	 **/
 	function analysisOfServerResponseInJSON(response) { // derfex+ derfex- derfex?
+		var a;
 		try {
-			var a = JSON.parse(response);
+			a = JSON.parse(response);
 		}
 		catch (err) {
-			// dgLog({msg: 'Ответ пуст или имеет неверный формат', response: response, error: err});
-			// dgLog();
-			console.dir({msg: 'Ответ пуст или имеет неверный формат', response: response, error: err});
-		//	if (pAJAX_DebugOB) pAJAX_DebugOB.innerHTML = response;
-			return false;
+			console.log('Ответ пуст или имеет неверный формат. Пробуем обрезать лишнее…');
+			var afterSplit = response.split(_SEPARATOR_ON_ERROR_PARSE_RESPONSE)[1];
+			try {
+				a = JSON.parse(afterSplit);
+			}
+			catch (err) {
+
+				// dgLog({msg: 'Ответ пуст или имеет неверный формат', response: response, error: err});
+				// dgLog();
+				console.dir({msg: 'Ответ пуст или имеет неверный формат', response: {response: response, responseAfterSplit: afterSplit}, error: err});
+			//	if (pAJAX_DebugOB) pAJAX_DebugOB.innerHTML = response;
+				return false;
+			}
 		}
 
 		//if ('OB' in a) pAJAX_DebugOB.innerHTML=a.OB; // derfex? :: возможна ошибка
 		try {
+			var pAJAX_DebugOB;
 			if (pAJAX_DebugOB) pAJAX_DebugOB.innerHTML = '<aside>' + a.OB + '</aside>'
 		}
 		catch (err) {

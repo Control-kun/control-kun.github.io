@@ -176,12 +176,16 @@ window.frt = function () {
 
 	// AJAX: отправка данных формы обратного звонка
 	var formRPC = { // request phone call
+		pSW_RPC: pSW_RPC,
 		pName: document.getElementById('user-name'),
 		pPhone: document.getElementById('user-phone'),
 		pSubmit: document.getElementById('submit')
 	};
-	if (formRPC.pName) {
+	if (formRPC.pSW_RPC) {
 		formRPC.getData = function () {
+			// TODO: Собрать данные со всех полей.
+			// TODO: Указать ключи по атрибуту `data-dg-request-field-name` (?) или `name`.
+			// TODO: Учесть игнорирование полей, помеченных специальным CSS-классом или атрибутом.
 			return JSON.stringify({
 				name:  formRPC.pName.value,
 				phone: formRPC.pPhone.value
@@ -193,6 +197,7 @@ window.frt = function () {
 			callback: function () {
 				debugger;
 				console.log(arguments);
+				return false;
 			}
 		});
 		formRPC.sendData = function () {
@@ -200,7 +205,12 @@ window.frt = function () {
 			formRPC.AJAX.set({request: 'JSONstr={"Mission":"form:phonecall","Data":' + formRPC.getData() + '}'})();
 			return false;
 		};
-		formRPC.pSubmit.addEventListener('click', formRPC.sendData);
+		// formRPC.pSubmit.addEventListener('click', function(){ return formRPC.sendData(); });
+		// formRPC.pSubmit.onclick = function(){ return formRPC.sendData(); };
+		formRPC.pSW_RPC.addEventListener('submit', function (event) {
+			event.preventDefault();
+			formRPC.sendData();
+		});
 	}
 
 
