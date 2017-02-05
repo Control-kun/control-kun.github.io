@@ -1,5 +1,11 @@
 .frt-nav-mobile-panel{position:fixed;z-index:1000;left:0;right:0;bottom:0;min-width:320px;background:#fff;font-size:20px}/* TODO: slick-carousel use z-index:999; можно меньше? */
-.frt-nav-mobile-panel,.frt-nav-mobile-panel-substratum{height:80px}
+/* FIXME: не работает 'height:100%' в растянутых дочерних элементах с flex-родителем.
+|  Это касается браузеров даже 2015 года. Например, Google Chrome 44.0.2403.130 (06.08.2015).
+|  Потом можно будет придумать, чтобы только у неудачников высота в пикселях применялась.
+|  Касается .frt-nav-mobile-panel__button.
+*************************************************/
+.frt-nav-mobile-panel,.frt-nav-mobile-panel-substratum,
+.frt-nav-mobile-panel .frt-nav-mobile-panel__button{height:40px}
 
 .frt-nav-mobile-panel .dg-set.dg-set--flexbox .frt-nav-mobile-panel__button-box{flex:1 auto}
 .frt-nav-mobile-panel .dg-set.dg-set--flexbox .frt-nav-mobile-panel__button-box--menu{flex:0 auto;width:80px}
@@ -16,9 +22,12 @@
 .frt-nav-mobile-panel__button-inside .dg-ico.frt-ico,.frt-nav-mobile-panel__button-inside .dg-txt.frt-txt{vertical-align:middle}
 
 
-#frt-nav-mobile-menu__switch        +.frt-nav-mobile-menu__box{transform:translateX(100%)}
-#frt-nav-mobile-menu__switch:checked+.frt-nav-mobile-menu__box{transform:translateX(0)}
-.frt-nav-mobile-menu__box{position:fixed;top:0;right:0;bottom:80px;width:290px;background:#00bbec;font-size:30px;color:#fff;transition:transform .3s ease-in-out}
+#frt-nav-mobile-menu__switch        ~.frt-nav-mobile-menu__box{transform:translateX(100%)}
+#frt-nav-mobile-menu__switch:checked~.frt-nav-mobile-menu__box{transform:translateX(0)}
+.frt-nav-mobile-menu__box{position:fixed;top:0;right:0;bottom:40px;width:290px;background:#00bbec;font-size:30px;color:#fff;transition:transform .3s ease-in-out}
+
+#frt-nav-mobile-menu__switch:checked~.frt-nav-mobile-panel__button .dg-ico.frt-ico.frt-ico--menu{background-image:none}
+#frt-nav-mobile-menu__switch:checked~.frt-nav-mobile-panel__button .dg-ico.frt-ico.frt-ico--menu:after{content:'×';line-height:30px;font-size:60px;color:#313131}
 
 .frt-nav-mobile-menu{position:absolute;bottom:0;left:0;padding:5px 0;max-height:100%}
 .frt-nav-mobile-menu .dg-button{padding:11px 24px}
@@ -59,7 +68,8 @@
 
 /* • Fortunum MD */
 @media only screen and (min-width : 750px) {
-	.frt-nav-mobile-menu{width:640px}
+	.frt-nav-mobile-menu__box,
+	.frt-nav-mobile-menu{width:640px}/* TODO?: 100% */
 	.frt-nav-mobile-menu .dg-button{padding:16px 100px}
 }
 

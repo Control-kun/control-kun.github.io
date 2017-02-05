@@ -63,12 +63,12 @@
 					</div>
 				</a>
 			<li class="dg-li frt-nav-mobile-panel__button-box frt-nav-mobile-panel__button-box--menu">
+				<input id="frt-nav-mobile-menu__switch" type="checkbox" hidden>
 				<label for="frt-nav-mobile-menu__switch" class="frt-nav-mobile-panel__button dg-button dg-link--wrap dg-100 dg-flexbox" title="Показать навигационное меню">
 					<div class="frt-nav-mobile-panel__button-inside">
 						<i class="dg-ico frt-ico frt-ico--menu"></i>
 					</div>
 				</label>
-				<input id="frt-nav-mobile-menu__switch" type="checkbox" hidden>
 				<div class="frt-nav-mobile-menu__box">
 					<a href="/" class="dg-link--wrap frt-nav-mobile-menu__logo">
 						<img class="dg-img dg-center-clamp" src="<?=FRT_ROOT?>img/owner/fortunum-logo.png" alt="«Fortunum»: корпусная мебель на заказ в Санкт-Петербурге.">
